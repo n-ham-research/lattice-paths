@@ -1,0 +1,11 @@
+# Phase 4: an explicit constrained-walk equivalence
+
+16 October 2026. Coordinator synthesis of the proved reflection map in phase4-inverse.md and East–Ham's previously inspected constrained-walk category. This is an elementary symmetry, not a new category-theoretic result or a new original-inventory disposition.
+
+Fix the triangular layered directed graph with objects (n,y), 0≤y≤n, and morphisms admissible finite words between specified vertices. Identities are empty words; composition concatenates words. Give each jump (1,d) weight f(d), with multiplicative word weights. Reflection R(n,y)=(n,n−y), R(d)=1−d defines an involutive category isomorphism from the f-weighted walk category to the f^R-weighted category, f^R(d)=f(1−d). It preserves composition, identities, word length and weights: each reflected factor f^R(1−d) equals f(d). This works from every allowed starting vertex, not merely the origin. In particular it is stronger than a match of origin row totals.
+
+For step sets, it gives an explicit word bijection between D and 1−D with reflected endpoints. Thus {0,1,2} and {−1,0,1} are enumeration-equivalent after endpoint reflection but are distinguished by labelled endpoint observations. The induced row multisets/totals agree at every horizon. No claim that all observational equivalences arise from category isomorphisms is made; a coarse observation can identify models without any such isomorphism.
+
+This is a useful way to formulate what an inverse problem loses: select the endpoint labels/weights to retain before seeking a kernel classification. The scalar and small-modulus inverse theorems show how extra regularity can restore information. A bare endpoint-generated submonoid still loses the generator/word information, and the full weighted transition graph already determines the category and all path sums. No claim of additional enumeration information beyond that graph is possible here.
+
+Packed-class direct maps, the local Riordan map and primary blob definitions remain open; no new bijection for those families is claimed in Phase 4. The reflection is retained in the inverse narrative because it supplies a rigorous all-horizon obstruction with positively reachable endpoints, rather than adding unrelated combinatorial material to the paper.

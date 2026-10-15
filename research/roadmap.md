@@ -18,3 +18,7 @@ The current handover is handover-phase2.md. Finite triangular residue rigidity i
 ## After phase 3
 
 Current handover: handover-phase3.md. Main focus is structural versus actual residue compression, general growing-window mass obstructions and inverse endpoint data. Review the four-page briefing and exact novelty ledger before deciding on external discussion. Strong next questions are infinite-support trajectory converses, optimal uniform-block certificates, general-q cone boundary connectivity and useful graded-category equivalences. Classical profile formulas and packed-word count identification are supporting results. Blob primary definitions and a direct class map remain open.
+
+## After Phase 4
+
+Prefer author-led specialist recognition using the refined four-page briefing before further broad internal research. Specific development targets: periodic seeds for q≥4 indicators; unequal real initial weights; eventual uniformity; optimal origin-start certificates; signed kernels and sparse uniform rows; useful geometry/observation equivalences. New q2/q3 and funnel compressed results are in handover-phase4.md. Classical direct maps/blob definitions remain deferred, not solved. No external contact has occurred.

@@ -38,3 +38,7 @@ The initial ledger above is retained as the first-pass record. Current cumulativ
 ## Phase 3 superseding status
 
 Current phase3-claim-status.json establishes only H2019-23-01 anew, by actual primary m-packed-word definitions/formula182 and a formal generating-series proof. Cumulative58 established/answered,19 literal disproofs,61 unresolved,10 verified table claims,2 context;131 fully/partially investigated. New structural/trajectory theorems are separate research statements, not extra original claim IDs. Phase2 snapshot is retained. See handover-phase3.md for domain, novelty and review limits.
+
+## Phase 4 disposition check
+
+The original150 claims retain exactly their Phase3 dispositions in phase3-claim-status.json:58 established/answered,19 disproved,61 unresolved,10 verified-data,2 context;131 investigated. New obstruction, funnel inverse and small-modulus compressed theorems are separate structural research, not extra solved original IDs. No inventory or prior snapshot was rewritten. See handover-phase4.md.

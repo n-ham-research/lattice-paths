@@ -49,3 +49,17 @@ Significant structural/trajectory results have three separate agent-role reviews
 Disposition: accept exact proved statements within stated hypotheses. General-q integer-cone converse and infinite-support actual-trajectory converse remain unproved. Profile formula is classical; packed-word result is a known-formula consequence. A source186 normalization discrepancy is recorded cautiously and not used as a proof premise. Novelty is not certified.
 
 Repairs: delete final leaf before reverse-negating; ordinary polygons require a nonempty profile; inverse conditional theorem holds over fields but indicator-pivot guarantee is for ordinary integer/characteristic-zero counts; only23-01 axis family is resolved, not all§23. New characteristic-two regression uses p2=[2,2,2]→0. Fresh final transcription review independently confirmed the repairs. Final numerical/build/layout scope is recorded in handover-phase3.md.
+
+## Phase 4 — actual task paths and initially separate reviews
+
+All agents received the Phase4 request and repository guidance/prior handover. Initial research roles were separated; cross-review instructions explicitly prohibited reading the other Phase4 review reports before an initial assessment. They shared prior context/model/tools. None is an external referee or a human verifier.
+
+| Task | Actual authorship/review and supplied material | Evidence |
+|---|---|---|
+| /root/obstruction4 | Boundary certificate/sharpness/assumption boundaries; reviewed inverse4 and infinite4 notes/scripts | phase4-counterexamples.md; reran both exact scripts; accepted funnel/q2 proofs |
+| /root/inverse4 | Observation fibers/funnel/scalar/reﬂection; reviewed obstruction4 and infinite4 notes/scripts | phase4-generalization.md; independently reconstructed q2 factor/negative branch; caught incorrect auxiliary no-wrap claim, verified inequality repair |
+| /root/infinite4 | q2/q3 compressed seed converses and exact arithmetic; reviewed obstruction4/inverse4 before reading other reviews | phase4-inference.md;3591 extra restarted cases,63 supports[-2,3],q1..5,all nonempty binary residue rows; reran inverse script |
+| /root/fresh4 | Fresh proof/transcription review without initially reading Phase4 reviews; then final main/briefing scope check, including q3 | phase4-fresh-proof.md;168 restarted cases(q1..12,v1..14),30 rational-factor evaluations,16 q3seed assignments. Independent new-source retrieval cachemisses; no own primary-source signoff |
+| /root | Coordinator proof scrutiny/integration, primary reading, category formulation, exact builds and visual QA | handover-phase4.md; finalvalidation records; no claim of external mathematical approval |
+
+The corrected nonhomogeneous proof permits negative coordinates to wrap upward and forbids only upper wraps; it uses inequalities rather than the false equality claim. The original mass proof also works with products K_n. Restarted sharpness has not been promoted to origin-start sharpness. Full field-valued fiber/rank criteria have not been misapplied to indicator-class necessity or hidden predecessor data. Small-modulus initial/equal-weight/all-prefix hypotheses remain explicit.

@@ -9,4 +9,7 @@ python3 -m experiments.table_audit
 python3 -m experiments.phase2_classification
 python3 -m experiments.trajectory_inverse
 python3 -m experiments.phase3_geometry
+python3 -m experiments.phase4_obstruction
+python3 -m experiments.phase4_inverse
+python3 -m experiments.phase4_infinite
 ./scripts/build.sh
