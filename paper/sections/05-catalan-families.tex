@@ -1,1 +1,38 @@
-% Reserved for verified Catalan-family results after their separate source audit.
+\section{Classical excursion, tree and Dyck encodings}
+Let $A\subseteq\Z_{\ge0}$. Consider nonnegative excursions in height increments $\{+1\}\cup\{-a:a\in A\}$; all words end at height zero. In this subsection $N$ denotes total step length.
+\begin{theorem}[Classical encoding with size statistics]\label{thm:trees}
+These excursions of length $N$ are in bijection with rooted ordered trees on $N+1$ vertices whose positive outdegrees lie in $A+1$, and with Dyck paths of semilength $N$ whose maximal ascents have lengths in $A+1$. If the excursion has $u$ upsteps and $r_a$ steps $-a$, its tree has $u+1$ leaves and $r_a$ vertices of degree $a+1$.
+\end{theorem}
+\begin{proof}
+Reverse and negate the excursion. Its partial sum at time $j$ is the original height at time $N-j$, so remains nonnegative. Append $-1$. Reading each increment $s$ as a preorder vertex of degree $s+1$ gives a tree: the number of unfilled slots is one plus the partial sum, positive before the final vertex and zero at the end. This also proves the degree statistics.
+
+For preorder degrees $d_1,\ldots,d_{N+1}$ write $U^{d_1}D\cdots U^{d_{N+1}}D$ and delete the final $D$. Prefix sums ensure this is Dyck, and every positive degree forms one maximal ascent. Conversely, append $D$ to a Dyck word and split at every $D$; the intervening up-run lengths, including zeros, recover the degrees. Delete the final zero, replace the remaining degrees by $1-d$, and reverse to recover the original excursion. The prefix inequalities ensure validity in both directions. Empty objects correspond.
+\end{proof}
+This is a size-explicit form of classical preorder and restricted-rise constructions; see \cite[Proposition 2]{HacklEtAl} and \cite{BrakEtAl}.
+
+For Section 18, specialize to negative even jumps, so positive tree degrees are odd and at least three. The classical dissection duality \cite[Proposition 2.2]{CurienKortchemski} makes the shift explicit. Root a polygon at a prescribed base side, place an internal vertex in every face, and a leaf at each nonbase boundary side. A face with $2k+2$ sides has $2k+1$ children. Conversely, child subtrees with successive leaf counts $L_1,\ldots,L_d$ determine successive vertices of the root face by cumulative sums along the polygon boundary; recurse in the consecutive child intervals. These intervals are nested or disjoint, so the diagonals do not cross, and the two constructions recover each other.
+
+If the excursion has $u$ upsteps and $r$ downsteps, its polygon has $u+2$ boundary sides and $r-1$ diagonals, hence $N+1$ total edges. Thus the axis count at horizontal coordinate $N$ is the even-faced dissection count at total edges $N+1$. The empty excursion corresponds separately to a formal single-edge object; ordinary polygons begin with the quadrilateral. This resolves the source's indexing without asserting that a one-edge polygon is ordinary.
+
+Let $x$ mark original upsteps and $q_a$ mark steps $-a$. Root decomposition, assigning a leaf weight $x$, gives $T=x+\sum_aq_aT^{a+1}$. Since a tree has one more leaf than original upsteps, $T=xE$, where $E$ is the excursion series. Hence
+\begin{equation}\label{eq:treegf}
+E=1+\sum_{a\in A}q_ax^aE^{a+1}.
+\end{equation}
+This multivariate identity is interpreted coefficientwise by full size profiles. For horizontal increment one on every step, specialize $x=z,q_a=z$. For vertical downsteps specialize $x=z,q_a=1$, requiring $A\subseteq\Z_{>0}$ to exclude zero displacement. There are then finitely many words at fixed horizontal coordinate: every downstep consumes at least one of the finitely many upsteps' height units.
+
+For integer $m\ge1$, unit-horizontal downsteps $-mk$, $k\ge0$, yield
+\[
+E=1+\frac{zE}{1-(zE)^m}.
+\]
+Thus Sections 6--11 of \cite{Ham2019} count precisely Dyck paths with ascents congruent to one modulo $m$, at semilength equal to the original horizontal coordinate.
+
+The two models in Section 17, with vertical downstep $-m$ or unit-horizontal downsteps $1-mk$ ($k\ge1$), both give
+\[
+E=1+z^mE^{m+1}.
+\]
+Therefore their axis count at $(mn,0)$ is $\binom{(m+1)n}{n}/(mn+1)$, by Lagrange inversion. Their total step lengths differ, but their horizontal coordinates agree. For vertical downsteps $-mk$, $k\ge1$, Sections 21--23 give $E=H(z^m)$, where
+\[
+H=1+tH^m(2H-1),\qquad
+[t^n]H=\frac1n\sum_{j=0}^{n-1}\binom nj2^j\binom{mn}{n-1-j}\quad(n\ge1).
+\]
+Indeed, with $W=H-1$, the equation becomes $W=t(1+W)^m(1+2W)$, so Lagrange inversion gives the coefficient formula. These classical consequences establish tree and excursion interpretations, without certifying the source's separate blob or packed-word identifications.

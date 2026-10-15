@@ -1,1 +1,51 @@
-% No result is currently claimed as new. Candidate extensions stay in research/.
+\section{Residue regularity and finite rigidity}
+Fix $q\ge1$, $D\subseteq\Z$ and $f=1_D$. For finite integer intervals $I,J$, set
+\[
+(Tp)(y)=\sum_{z\in I}f(y-z)p(z),\qquad y\in J.
+\]
+Write $V_q(I)$ for functions constant on each nonempty residue cell of $I$ modulo $q$. Call $T$ residue-regular when $T V_q(I)\subseteq V_q(J)$. This tests all block-constant inputs, rather than just those reached from the origin.
+
+\begin{proposition}[Interval boundary criterion]\label{prop:boundary}
+For each nonempty source residue cell let $a_r,b_r$ be its minimum and maximum. Then $T$ is residue-regular if and only if
+\begin{equation}\label{eq:boundary}
+f(y-a_r+q)=f(y-b_r)
+\end{equation}
+for every such cell and all $y,y+q\in J$.
+\end{proposition}
+\begin{proof}
+The predecessor sum from that cell is
+$C_r(y)=\sum_{k=0}^{(b_r-a_r)/q}f(y-a_r-kq)$.
+Telescoping gives $C_r(y+q)-C_r(y)=f(y-a_r+q)-f(y-b_r)$.
+A target residue cell is an arithmetic progression, so adjacent equalities imply constancy. Testing source-cell indicators proves necessity; linearity proves sufficiency. Empty intervals cause no difficulty.
+\end{proof}
+
+\begin{theorem}[Finite triangular rigidity]\label{thm:rigidity}
+Let $I_n=\{0,\ldots,n\}$, and let $T_n$ be the above transition from $I_{n-1}$ to $I_n$. For $N\ge q$, all $T_n$, $1\le n\le N$, are residue-regular if and only if $f$ is constant on every residue class within
+\[
+W_N=\{1-N,\ldots,N\}.
+\]
+For $N<q$ all these transitions are residue-regular for every $D$.
+\end{theorem}
+\begin{proof}
+If $f$ is residue-constant on $W_N$, then for congruent targets $y,y'$ each source $z$ gives $f(y-z)=f(y'-z)$. All observable differences lie in $W_N$, proving sufficiency. If $N<q$, every target cell is a singleton.
+
+For necessity suppose $N\ge q$. Compare predecessor equalities for $T_n$ and $T_{n+1}$, using source residue $n\bmod q$ and targets $y,y+q$, where $q\le n\le N-1$ and $0\le y\le n-q$. The source cell gains exactly the element $n$, so subtraction gives
+\[
+f(y+q-n)=f(y-n).
+\]
+Their union gives $f(t+q)=f(t)$ for $1-N\le t\le-q$. Thus $f$ is residue-constant on the nonpositive part of $W_N$, which contains every residue. At $N=q$ this conclusion is vacuous within each singleton nonpositive cell, as required.
+
+For $1\le d\le N$, put $r=q-d$ if $d<q$, and $r=0$ otherwise; set $y=d+r-q$. Then $0\le r<q$ and $y,y+q\in I_N$. The minimum of source cell $r$ is $a_r=r$. Proposition~\ref{prop:boundary} gives $f(d)=f(y-b_r)$. Here $1-N\le y-b_r\le0$ and $y-b_r\equiv d\pmod q$: for $d<q$, $y=0$; for $d\ge q$, $b_0\ge N-q$ yields $y-b_0\le d-N\le0$. Each positive difference therefore agrees with its nonpositive residue representative. This completes the proof.
+\end{proof}
+
+\begin{proposition}[Infinite classification and quotient]\label{prop:periodic}
+All triangular transitions are residue-regular modulo $q$ if and only if $D$ is a union of full residue classes modulo $q$. In that case, for every nonempty target residue cell $s$, the exact count per endpoint satisfies
+\[
+p_n(s)=\sum_{r=0}^{q-1}m_{n-1,r}f(s-r)p_{n-1}(r),
+\]
+where $m_{n-1,r}=|I_{n-1}\cap(r+q\Z)|$; absent target cells can be assigned value zero for bookkeeping, without applying this recurrence to them.
+\end{proposition}
+\begin{proof}
+Every pair of congruent integers lies in $W_N$ for sufficiently large $N$, so Theorem~\ref{thm:rigidity} proves necessity. Periodicity gives sufficiency and the displayed predecessor counts. The singleton initial layer is block-constant, so induction applies to actual path counts.
+\end{proof}
+For $q=1$, only $D=\Z$ and $D=\varnothing$ preserve the entire constant-input space at every layer. This is not a classification from one trajectory: $D=\{-1\}$ has zero positive-length counts throughout the triangle, hiding irregular transitions. Nor does one regular transition force periodicity: $D=\{-1,1\}$ gives equal predecessor sums from $\{0,1\}$ to $\{0,1,2\}$, but fails the preceding transition. Arbitrary moving intervals need not impose periodicity; Proposition~\ref{prop:boundary}, rather than the triangular converse, is their exact criterion.
