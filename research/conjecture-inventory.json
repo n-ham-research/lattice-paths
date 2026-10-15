@@ -1,0 +1,3453 @@
+{
+  "schema_version": 1,
+  "source": "Ham, Lattice path conjectures, 11 May 2019",
+  "inventory_date": "2026-10-16",
+  "verification_policy": "All verified_terms=0 here. Computational and proof evidence is kept separately in conjecture-audit.md; source-reported matches are not independent checks.",
+  "sections": [
+    {
+      "number": 1,
+      "title": "Introduction",
+      "models": [],
+      "ambiguities": "Context, algorithmic motivation, and open Euclid-orchard direction; no numerical sequence assertion.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-01-01",
+          "statement": "Equal counting functions permit substitution of a cheaper counting algorithm when inputs and conventions correspond.",
+          "model": null,
+          "enumeration": "algorithmic observation",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "An equality alone gives no algorithmic speedup without a complexity analysis.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 1,
+          "source_pdf": "Ham (2019), section 1"
+        },
+        {
+          "id": "H2019-01-02",
+          "statement": "Seek sequence connections for step sets contained in Euclid’s orchard, higher-dimensional or rational-lattice analogues.",
+          "model": null,
+          "enumeration": "research question",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 1,
+          "source_pdf": "Ham (2019), section 1"
+        }
+      ],
+      "source_text_line": 13
+    },
+    {
+      "number": 2,
+      "title": "Powers of 2",
+      "models": [
+        {
+          "id": "positive-horizontal",
+          "step_set": "{(a,0): a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Source writes Z_+ without defining whether zero is excluded. Zero would give a zero step and infinite counts. Endpoint/index not specified.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-02-01",
+          "statement": "Horizontal compositions are associated with powers of two.",
+          "model": "positive-horizontal",
+          "enumeration": "Endpoint (n,0); source does not state offset.",
+          "oeis": [
+            "A000079"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 2,
+          "source_pdf": "Ham (2019), section 2"
+        }
+      ],
+      "source_text_line": 42
+    },
+    {
+      "number": 3,
+      "title": "k-generalised Fibonacci numbers",
+      "models": [
+        {
+          "id": "bounded-horizontal",
+          "step_set": "{(a,0):1<=a<=k}, k in Z_>0",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The role of k and indexing in A092921 require checking.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-03-01",
+          "statement": "Bounded positive horizontal increments yield a k-step Fibonacci family.",
+          "model": "bounded-horizontal",
+          "enumeration": "Endpoint (n,0), k fixed",
+          "oeis": [
+            "A092921"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 3,
+          "source_pdf": "Ham (2019), section 3"
+        }
+      ],
+      "source_text_line": 47
+    },
+    {
+      "number": 4,
+      "title": "binomial((m+1)n,n)",
+      "models": [
+        {
+          "id": "vertical-fixed",
+          "step_set": "{(1,1),(0,-m)}, m in Z_>0",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Endpoint absent. Natural proposed reading is ((mn),0), with mn upsteps and n downsteps; do not equate x=n with sequence index n.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-04-01",
+          "statement": "Unconstrained counts are associated with binomial((m+1)n,n).",
+          "model": "vertical-fixed",
+          "enumeration": "Likely endpoint (mn,0), not explicitly specified",
+          "oeis": [
+            "A000984",
+            "A005809",
+            "A005810"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Identifiers correspond in source to m=1,2,3 respectively.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 4,
+          "source_pdf": "Ham (2019), section 4"
+        }
+      ],
+      "source_text_line": null
+    },
+    {
+      "number": 5,
+      "title": "An algebraic ordinary generating function",
+      "models": [
+        {
+          "id": "up-arbitrary-down",
+          "step_set": "{(1,1)} union {(1,-a):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Endpoint and starting sequence index absent.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-05-01",
+          "statement": "Proposed OGF is (1/2)*(1/(x+1)+1/sqrt(1-2*x-3*x^2)).",
+          "model": "up-arbitrary-down",
+          "enumeration": "Unspecified endpoint slice, probably y=0",
+          "oeis": [
+            "A246437"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 5,
+          "source_pdf": "Ham (2019), section 5"
+        }
+      ],
+      "source_text_line": 62
+    },
+    {
+      "number": 6,
+      "title": "Ordered odd trees",
+      "models": [
+        {
+          "id": "even-down-zero",
+          "step_set": "{(1,1)} union {(1,-2*k):k in Z_>=0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "even-up-zero",
+          "step_set": "{(1,-1)} union {(1,2*k):k in Z_>=0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The first primary slice is not explicitly stated; zero-height steps (1,0) are included. Reversal/reflection does not automatically preserve arbitrary endpoint slices.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-06-01",
+          "statement": "The principal series satisfies A(x)=1+x*A(x)/(1-x^2*A(x)^2), associated with ordered odd trees.",
+          "model": "even-down-zero",
+          "enumeration": "Primary slice unspecified, probably y=0",
+          "oeis": [
+            "A101785"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 6,
+          "source_pdf": "Ham (2019), section 6"
+        },
+        {
+          "id": "H2019-06-02",
+          "statement": "The near-top diagonal may have triangular numbers.",
+          "model": "even-down-zero",
+          "enumeration": "y=x-2",
+          "oeis": [
+            "A000217"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Tentative source match checked there only to value 91; not independent verification.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 6,
+          "source_pdf": "Ham (2019), section 6"
+        },
+        {
+          "id": "H2019-06-03",
+          "statement": "The next diagonal may match either cited sequence.",
+          "model": "even-down-zero",
+          "enumeration": "y=x-3",
+          "oeis": [
+            "A003600",
+            "A283551"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 6,
+          "source_pdf": "Ham (2019), section 6"
+        },
+        {
+          "id": "H2019-06-04",
+          "statement": "Sums over each finite column may give the cited sequence.",
+          "model": "even-down-zero",
+          "enumeration": "sum over all endpoints (x,y), x fixed",
+          "oeis": [
+            "A143017"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 6,
+          "source_pdf": "Ham (2019), section 6"
+        },
+        {
+          "id": "H2019-06-05",
+          "statement": "The reflected step model may give the same ordered-odd-tree sequence.",
+          "model": "even-up-zero",
+          "enumeration": "y=0",
+          "oeis": [
+            "A101785"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 6,
+          "source_pdf": "Ham (2019), section 6"
+        }
+      ],
+      "source_text_line": 67
+    },
+    {
+      "number": 7,
+      "title": "Dyck ascents congruent to 1 modulo 3",
+      "models": [
+        {
+          "id": "mod-3-down",
+          "step_set": "{(1,1)} union {(1,-3*k):k in Z_>=0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Principal endpoint slice and map from horizontal coordinate to Dyck semilength absent. In §11 the intended parameter m needs a positive-integer domain.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-07-01",
+          "statement": "Counts are associated with Dyck paths whose ascent lengths are 1 modulo 3.",
+          "model": "mod-3-down",
+          "enumeration": "Primary slice unspecified, probably y=0",
+          "oeis": [
+            "A212383"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 7,
+          "source_pdf": "Ham (2019), section 7"
+        }
+      ],
+      "source_text_line": 81
+    },
+    {
+      "number": 8,
+      "title": "Dyck ascents congruent to 1 modulo 4",
+      "models": [
+        {
+          "id": "mod-4-down",
+          "step_set": "{(1,1)} union {(1,-4*k):k in Z_>=0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Principal endpoint slice and map from horizontal coordinate to Dyck semilength absent. In §11 the intended parameter m needs a positive-integer domain.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-08-01",
+          "statement": "Counts are associated with Dyck paths whose ascent lengths are 1 modulo 4.",
+          "model": "mod-4-down",
+          "enumeration": "Primary slice unspecified, probably y=0",
+          "oeis": [
+            "A212384"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 8,
+          "source_pdf": "Ham (2019), section 8"
+        }
+      ],
+      "source_text_line": 87
+    },
+    {
+      "number": 9,
+      "title": "Dyck ascents congruent to 1 modulo 5",
+      "models": [
+        {
+          "id": "mod-5-down",
+          "step_set": "{(1,1)} union {(1,-5*k):k in Z_>=0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Principal endpoint slice and map from horizontal coordinate to Dyck semilength absent. In §11 the intended parameter m needs a positive-integer domain.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-09-01",
+          "statement": "Counts are associated with Dyck paths whose ascent lengths are 1 modulo 5.",
+          "model": "mod-5-down",
+          "enumeration": "Primary slice unspecified, probably y=0",
+          "oeis": [
+            "A212385"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 9,
+          "source_pdf": "Ham (2019), section 9"
+        }
+      ],
+      "source_text_line": 93
+    },
+    {
+      "number": 10,
+      "title": "Dyck ascents congruent to 1 modulo 6",
+      "models": [
+        {
+          "id": "mod-6-down",
+          "step_set": "{(1,1)} union {(1,-6*k):k in Z_>=0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Principal endpoint slice and map from horizontal coordinate to Dyck semilength absent. In §11 the intended parameter m needs a positive-integer domain.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-10-01",
+          "statement": "Counts are associated with Dyck paths whose ascent lengths are 1 modulo 6.",
+          "model": "mod-6-down",
+          "enumeration": "Primary slice unspecified, probably y=0",
+          "oeis": [
+            "A212386"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 10,
+          "source_pdf": "Ham (2019), section 10"
+        }
+      ],
+      "source_text_line": 99
+    },
+    {
+      "number": 11,
+      "title": "Dyck ascents congruent to 1 modulo m",
+      "models": [
+        {
+          "id": "mod-m-down",
+          "step_set": "{(1,1)} union {(1,-m*k):k in Z_>=0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Principal endpoint slice and map from horizontal coordinate to Dyck semilength absent. In §11 the intended parameter m needs a positive-integer domain.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-11-01",
+          "statement": "Counts are associated with Dyck paths whose ascent lengths are 1 modulo m.",
+          "model": "mod-m-down",
+          "enumeration": "Primary slice unspecified, probably y=0",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 11,
+          "source_pdf": "Ham (2019), section 11"
+        }
+      ],
+      "source_text_line": null
+    },
+    {
+      "number": 12,
+      "title": "binomial(2n+1,n+1)",
+      "models": [
+        {
+          "id": "up-nonpositive",
+          "step_set": "{(1,1)} union {(1,1-k):k in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "No region or endpoint specified; (1,0) is allowed.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-12-01",
+          "statement": "Counts are associated with binomial(2n+1,n+1).",
+          "model": "up-nonpositive",
+          "enumeration": "Unspecified slice/index",
+          "oeis": [
+            "A001700"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 12,
+          "source_pdf": "Ham (2019), section 12"
+        }
+      ],
+      "source_text_line": 113
+    },
+    {
+      "number": 13,
+      "title": "Compositions into 2n parts",
+      "models": [
+        {
+          "id": "up-odd-down",
+          "step_set": "{(1,1)} union {(1,1-2*k):k in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The title says compositions of n into 2n parts, impossible for positive parts when n>0; weak compositions versus another total require resolution.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-13-01",
+          "statement": "A composition-counting sequence is suggested.",
+          "model": "up-odd-down",
+          "enumeration": "Unspecified slice/index",
+          "oeis": [
+            "A165817"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 13,
+          "source_pdf": "Ham (2019), section 13"
+        },
+        {
+          "id": "H2019-13-02",
+          "statement": "The author asks why the formula is not binomial(3n-1,n).",
+          "model": "up-odd-down",
+          "enumeration": "comparison question",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Question, not an assertion of equality.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 13,
+          "source_pdf": "Ham (2019), section 13"
+        }
+      ],
+      "source_text_line": 118
+    },
+    {
+      "number": 14,
+      "title": "Ternary and noncrossing trees",
+      "models": [
+        {
+          "id": "odd-up",
+          "step_set": "{(1,-1)} union {(1,2*k-1):k in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "vertical-two",
+          "step_set": "{(1,1),(0,-2)}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The first model has no nonnegative boundary in the text; its fixed-column endpoints are unbounded above. Do not silently impose y>=0.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-14-01",
+          "statement": "The two low rows are associated with binomial(3n,n)/(2n+1).",
+          "model": "odd-up",
+          "enumeration": "rows y=0 and y=1 separately",
+          "oeis": [
+            "A001764"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 14,
+          "source_pdf": "Ham (2019), section 14"
+        },
+        {
+          "id": "H2019-14-02",
+          "statement": "Tentative fixed-column sequence match.",
+          "model": "odd-up",
+          "enumeration": "column x=3, y increasing",
+          "oeis": [
+            "A000217"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 14,
+          "source_pdf": "Ham (2019), section 14"
+        },
+        {
+          "id": "H2019-14-03",
+          "statement": "Tentative fixed-column sequence match.",
+          "model": "odd-up",
+          "enumeration": "column x=4, y increasing",
+          "oeis": [
+            "A062748"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 14,
+          "source_pdf": "Ham (2019), section 14"
+        },
+        {
+          "id": "H2019-14-04",
+          "statement": "Tentative fixed-column sequence match.",
+          "model": "odd-up",
+          "enumeration": "column x=5, y increasing",
+          "oeis": [
+            "A005718"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 14,
+          "source_pdf": "Ham (2019), section 14"
+        },
+        {
+          "id": "H2019-14-05",
+          "statement": "Tentative fixed-column sequence match.",
+          "model": "odd-up",
+          "enumeration": "column x=6, y increasing",
+          "oeis": [
+            "A062749"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 14,
+          "source_pdf": "Ham (2019), section 14"
+        },
+        {
+          "id": "H2019-14-06",
+          "statement": "Tentative near-top diagonal match.",
+          "model": "odd-up",
+          "enumeration": "y=x-1",
+          "oeis": [
+            "A127927"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 14,
+          "source_pdf": "Ham (2019), section 14"
+        },
+        {
+          "id": "H2019-14-07",
+          "statement": "Nonnegative vertical-down paths give the ternary-tree sequence.",
+          "model": "vertical-two",
+          "enumeration": "y=0, coordinate/index not stated",
+          "oeis": [
+            "A001764"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 14,
+          "source_pdf": "Ham (2019), section 14"
+        }
+      ],
+      "source_text_line": 125
+    },
+    {
+      "number": 15,
+      "title": "binomial(4n-1,n)",
+      "models": [
+        {
+          "id": "sparse-down",
+          "step_set": "{(1,1)} union {(1,1-3*k):k in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Endpoint/index not specified.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-15-01",
+          "statement": "Counts are associated with binomial(4n-1,n).",
+          "model": "sparse-down",
+          "enumeration": "Unspecified slice/index",
+          "oeis": [
+            "A262977"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 15,
+          "source_pdf": "Ham (2019), section 15"
+        }
+      ],
+      "source_text_line": 138
+    },
+    {
+      "number": 16,
+      "title": "binomial(5n-1,n)",
+      "models": [
+        {
+          "id": "sparse-down",
+          "step_set": "{(1,1)} union {(1,1-4*k):k in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Endpoint/index not specified.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-16-01",
+          "statement": "Counts are associated with binomial(5n-1,n).",
+          "model": "sparse-down",
+          "enumeration": "Unspecified slice/index",
+          "oeis": [
+            "A163455"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 16,
+          "source_pdf": "Ham (2019), section 16"
+        }
+      ],
+      "source_text_line": 143
+    },
+    {
+      "number": 17,
+      "title": "Pfaff–Fuss–Catalan sequences",
+      "models": [
+        {
+          "id": "vertical-m",
+          "step_set": "{(1,1),(0,-m)}, m in Z_>0",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "unit-x-m",
+          "step_set": "{(1,1)} union {(1,1-m*k):k in Z_>0}, m in Z_>0",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Source does not state endpoint extraction/index for either model. Models use different horizontal scales. Later OEIS list is not explicitly assigned to parameter values.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-17-01",
+          "statement": "The nonnegative model is associated with the Pfaff–Fuss–Catalan family.",
+          "model": "vertical-m",
+          "enumeration": "Primary slice unspecified, likely y=0",
+          "oeis": [
+            "A000108",
+            "A001764",
+            "A002293",
+            "A002294"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Source assigns m=1,2,3,4 respectively; Tables 1–3 use first model with m=2,3,4.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 17,
+          "source_pdf": "Ham (2019), section 17"
+        },
+        {
+          "id": "H2019-17-02",
+          "statement": "The nonnegative model is associated with the Pfaff–Fuss–Catalan family.",
+          "model": "unit-x-m",
+          "enumeration": "Primary slice unspecified, likely y=0",
+          "oeis": [
+            "A000108",
+            "A001764",
+            "A002293",
+            "A002294"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Source assigns m=1,2,3,4 respectively; Tables 1–3 use first model with m=2,3,4.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 17,
+          "source_pdf": "Ham (2019), section 17"
+        },
+        {
+          "id": "H2019-17-03",
+          "statement": "Additional unassigned family identifiers are listed.",
+          "model": "vertical-m",
+          "enumeration": "Parameter assignment/extraction absent",
+          "oeis": [
+            "A002295",
+            "A002296",
+            "A007556",
+            "A062994",
+            "A059967",
+            "A062744",
+            "A230388"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 17,
+          "source_pdf": "Ham (2019), section 17"
+        },
+        {
+          "id": "H2019-17-04",
+          "statement": "A possible Pfaff–Fuss–Catalan triangle is suggested.",
+          "model": "vertical-m",
+          "enumeration": "Full array? unspecified",
+          "oeis": [
+            "A062993"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 17,
+          "source_pdf": "Ham (2019), section 17"
+        }
+      ],
+      "source_text_line": 148
+    },
+    {
+      "number": 18,
+      "title": "Even-sided polygon dissections",
+      "models": [
+        {
+          "id": "even-down-positive",
+          "step_set": "{(1,1)} union {(1,-2*k):k in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "even-up-positive",
+          "step_set": "{(1,-1)} union {(1,2*k):k in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Excludes horizontal zero-height steps, unlike §6; source associates polygon dissections by total edges (sides plus diagonals).",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-18-01",
+          "statement": "Counts are associated with even-sided polygon dissections indexed by total edges.",
+          "model": "even-down-positive",
+          "enumeration": "Primary slice unspecified, probably y=0; Table 4",
+          "oeis": [
+            "A067955"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 18,
+          "source_pdf": "Ham (2019), section 18"
+        },
+        {
+          "id": "H2019-18-02",
+          "statement": "Several candidate matches remain indistinguishable in available data.",
+          "model": "even-down-positive",
+          "enumeration": "y=x-6",
+          "oeis": [
+            "A055998",
+            "A027379",
+            "A167544",
+            "A141214"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 18,
+          "source_pdf": "Ham (2019), section 18"
+        },
+        {
+          "id": "H2019-18-03",
+          "statement": "Tentative diagonal match.",
+          "model": "even-down-positive",
+          "enumeration": "y=x-7",
+          "oeis": [
+            "A028563"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 18,
+          "source_pdf": "Ham (2019), section 18"
+        },
+        {
+          "id": "H2019-18-04",
+          "statement": "Three reflected-model rows may yield the dissection sequence.",
+          "model": "even-up-positive",
+          "enumeration": "rows y=0,1,3 separately",
+          "oeis": [
+            "A067955"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 18,
+          "source_pdf": "Ham (2019), section 18"
+        }
+      ],
+      "source_text_line": 167
+    },
+    {
+      "number": 19,
+      "title": "Even trees",
+      "models": [
+        {
+          "id": "vertical-odd-down",
+          "step_set": "{(1,1)} union {(0,1-2*k):k in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "vertical-odd-up",
+          "step_set": "{(1,-1)} union {(0,2*k-1):k in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "First-model primary slice not explicitly identified; Table 5 resolves the array, not its indexing against OEIS.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-19-01",
+          "statement": "Counts are associated with even trees.",
+          "model": "vertical-odd-down",
+          "enumeration": "Primary slice unspecified; Table 5",
+          "oeis": [
+            "A049124"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 19,
+          "source_pdf": "Ham (2019), section 19"
+        },
+        {
+          "id": "H2019-19-02",
+          "statement": "Two rows of the reflected model may match even trees.",
+          "model": "vertical-odd-up",
+          "enumeration": "rows y=0,1 separately",
+          "oeis": [
+            "A049124"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 19,
+          "source_pdf": "Ham (2019), section 19"
+        },
+        {
+          "id": "H2019-19-03",
+          "statement": "Vertical-only initial-column paths are associated with Fibonacci numbers.",
+          "model": "vertical-odd-up",
+          "enumeration": "x=0, y increasing",
+          "oeis": [
+            "A000045"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 19,
+          "source_pdf": "Ham (2019), section 19"
+        },
+        {
+          "id": "H2019-19-04",
+          "statement": "A tentative next-column match is given.",
+          "model": "vertical-odd-up",
+          "enumeration": "x=1, y increasing",
+          "oeis": [
+            "A029907"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 19,
+          "source_pdf": "Ham (2019), section 19"
+        }
+      ],
+      "source_text_line": 179
+    },
+    {
+      "number": 20,
+      "title": "Motzkin sums / Riordan numbers",
+      "models": [
+        {
+          "id": "arbitrary-down",
+          "step_set": "{(1,1)} union {(1,-k):k in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "arbitrary-up",
+          "step_set": "{(1,-1)} union {(1,k):k in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Source says Motzkin paths of length n with k horizontal steps at level 0 but does not define the correspondence or role of k; Tables 6–7 have a duplicated column label 12 near their end.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-20-01",
+          "statement": "The models are associated with Motzkin sums / Riordan-number sequences.",
+          "model": "arbitrary-down",
+          "enumeration": "Primary extraction unspecified; Table 6",
+          "oeis": [
+            "A097609",
+            "A005043"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 20,
+          "source_pdf": "Ham (2019), section 20"
+        },
+        {
+          "id": "H2019-20-02",
+          "statement": "The second model is proposed as another realization.",
+          "model": "arbitrary-up",
+          "enumeration": "Primary extraction unspecified; Table 7",
+          "oeis": [
+            "A097609",
+            "A005043"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 20,
+          "source_pdf": "Ham (2019), section 20"
+        },
+        {
+          "id": "H2019-20-03",
+          "statement": "The second-model row is associated with generalized ballot numbers / first differences of Motzkin sums.",
+          "model": "arbitrary-up",
+          "enumeration": "y=2",
+          "oeis": [
+            "A002026"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 20,
+          "source_pdf": "Ham (2019), section 20"
+        },
+        {
+          "id": "H2019-20-04",
+          "statement": "Several OEIS alternatives are listed for a fixed column.",
+          "model": "arbitrary-up",
+          "enumeration": "x=3, y increasing",
+          "oeis": [
+            "A022856",
+            "A152948",
+            "A089071",
+            "A133263",
+            "A238531"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 20,
+          "source_pdf": "Ham (2019), section 20"
+        }
+      ],
+      "source_text_line": 189
+    },
+    {
+      "number": 21,
+      "title": "Little Schröder numbers",
+      "models": [
+        {
+          "id": "vertical-any-down",
+          "step_set": "{(1,1)} union {(0,-z):z in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Endpoint/index not explicit.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-21-01",
+          "statement": "Counts are associated with little Schröder (super-Catalan) numbers.",
+          "model": "vertical-any-down",
+          "enumeration": "Primary slice unspecified; Table 8",
+          "oeis": [
+            "A001003"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 21,
+          "source_pdf": "Ham (2019), section 21"
+        }
+      ],
+      "source_text_line": 200
+    },
+    {
+      "number": 22,
+      "title": "Blobs with 2n+1 edges",
+      "models": [
+        {
+          "id": "vertical-even-down",
+          "step_set": "{(1,1)} union {(0,-2*z):z in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "vertical-even-up",
+          "step_set": "{(1,-1)} union {(0,2*k):k in Z_>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Indexing and meaning of blobs must be obtained from the sequence reference.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-22-01",
+          "statement": "Counts are associated with blobs having 2n+1 edges.",
+          "model": "vertical-even-down",
+          "enumeration": "Primary slice unspecified; Table 9",
+          "oeis": [
+            "A003168"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 22,
+          "source_pdf": "Ham (2019), section 22"
+        },
+        {
+          "id": "H2019-22-02",
+          "statement": "Three reflected-model rows may give the blob sequence.",
+          "model": "vertical-even-up",
+          "enumeration": "rows y=0,1,2 separately",
+          "oeis": [
+            "A003168"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 22,
+          "source_pdf": "Ham (2019), section 22"
+        },
+        {
+          "id": "H2019-22-03",
+          "statement": "Tentative first-column match (other candidates were still possible).",
+          "model": "vertical-even-up",
+          "enumeration": "x=1, y increasing",
+          "oeis": [
+            "A001792"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 22,
+          "source_pdf": "Ham (2019), section 22"
+        },
+        {
+          "id": "H2019-22-04",
+          "statement": "Two tentative second-column alternatives.",
+          "model": "vertical-even-up",
+          "enumeration": "x=2, y increasing",
+          "oeis": [
+            "A049611",
+            "A084851"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 22,
+          "source_pdf": "Ham (2019), section 22"
+        }
+      ],
+      "source_text_line": 206
+    },
+    {
+      "number": 23,
+      "title": "Sylvester classes of m-packed words",
+      "models": [
+        {
+          "id": "vertical-multiple-down",
+          "step_set": "{(1,1)} union {(0,-m*z):z in Z_>0}, integer m>=3",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Only m=3 is explicitly assigned an identifier.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-23-01",
+          "statement": "The family is associated with Sylvester classes of m-packed words.",
+          "model": "vertical-multiple-down",
+          "enumeration": "Primary slice unspecified; m=3 shown in Table 10",
+          "oeis": [
+            "A243659"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 23,
+          "source_pdf": "Ham (2019), section 23"
+        },
+        {
+          "id": "H2019-23-02",
+          "statement": "Additional family identifiers are listed without parameter assignment.",
+          "model": "vertical-multiple-down",
+          "enumeration": "Unspecified parameter/extraction",
+          "oeis": [
+            "A243667",
+            "A243668"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 23,
+          "source_pdf": "Ham (2019), section 23"
+        }
+      ],
+      "source_text_line": null
+    },
+    {
+      "number": 24,
+      "title": "Factorials",
+      "models": [
+        {
+          "id": "odd-wedge",
+          "step_set": "{(1,2*a-1),(1,1-2*a):a in Z_>0}",
+          "region": "-x<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "all-triangle",
+          "step_set": "{(1,a):a in Z}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "nonzero-triangle",
+          "step_set": "{(1,a),(1,-a):a in Z_>0}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Diagonal/row sequences require reachable vertices only and offsets. Column totals are separate quantities. Source has stray a in all-triangle diagonal sentence.",
+      "priority": "first",
+      "claims": [
+        {
+          "id": "H2019-24-01",
+          "statement": "Odd-step wedge diagonals are associated with factorials.",
+          "model": "odd-wedge",
+          "enumeration": "y=x+a, fixed integer a, reachable points only",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Odd-step reachability forces y=x mod 2; odd a gives an identically zero diagonal. Negative even a has a nonzero starting offset.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        },
+        {
+          "id": "H2019-24-02",
+          "statement": "Odd-step wedge column totals are associated with factorials.",
+          "model": "odd-wedge",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Source says trivially equal; compare offset independently.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        },
+        {
+          "id": "H2019-24-03",
+          "statement": "Even-height rows are associated with even factorials.",
+          "model": "odd-wedge",
+          "enumeration": "y=2a, fixed integer a, admissible x",
+          "oeis": [
+            "A010050"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        },
+        {
+          "id": "H2019-24-04",
+          "statement": "Odd-height rows are associated with odd factorials.",
+          "model": "odd-wedge",
+          "enumeration": "y=2a+1, fixed integer a, admissible x",
+          "oeis": [
+            "A009445"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        },
+        {
+          "id": "H2019-24-05",
+          "statement": "All-step triangle top diagonal gives factorials.",
+          "model": "all-triangle",
+          "enumeration": "y=x",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        },
+        {
+          "id": "H2019-24-06",
+          "statement": "All-step triangle fixed positive rows give factorials.",
+          "model": "all-triangle",
+          "enumeration": "y=a, fixed positive integer a",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Starting x=a may yield a factorial tail rather than the complete sequence.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        },
+        {
+          "id": "H2019-24-07",
+          "statement": "All-step triangle column totals give factorials.",
+          "model": "all-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        },
+        {
+          "id": "H2019-24-08",
+          "statement": "Nonzero-step triangle top diagonal gives factorials with an explicit endpoint shift.",
+          "model": "nonzero-triangle",
+          "enumeration": "P(n+1,n+1)",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "first",
+          "source_section": 24,
+          "source_pdf": "Ham (2019), section 24"
+        }
+      ],
+      "source_text_line": 225
+    },
+    {
+      "number": 25,
+      "title": "Alternating factorials",
+      "models": [
+        {
+          "id": "nonzero-triangle",
+          "step_set": "{(1,a),(1,-a):a in Z_>0}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Text calls endpoints (0,n+1) the x-axis: these lie on the y-axis and outside the triangle except the origin. Plausible intended endpoints are (n+1,0); preserve defect rather than silently repairing.",
+      "priority": "second",
+      "claims": [
+        {
+          "id": "H2019-25-01",
+          "statement": "Axis counts are associated with alternating factorials.",
+          "model": "nonzero-triangle",
+          "enumeration": "Text says x-axis but writes P(0,n+1)",
+          "oeis": [
+            "A005165"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Endpoint typo needs explicit correction before verification.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 25,
+          "source_pdf": "Ham (2019), section 25"
+        },
+        {
+          "id": "H2019-25-02",
+          "statement": "Row two is also associated with alternating factorials.",
+          "model": "nonzero-triangle",
+          "enumeration": "y=2",
+          "oeis": [
+            "A005165"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 25,
+          "source_pdf": "Ham (2019), section 25"
+        },
+        {
+          "id": "H2019-25-03",
+          "statement": "Top diagonal gives factorials.",
+          "model": "nonzero-triangle",
+          "enumeration": "P(n+1,n+1)",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 25,
+          "source_pdf": "Ham (2019), section 25"
+        },
+        {
+          "id": "H2019-25-04",
+          "statement": "Column totals give factorials.",
+          "model": "nonzero-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A000142"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 25,
+          "source_pdf": "Ham (2019), section 25"
+        },
+        {
+          "id": "H2019-25-05",
+          "statement": "Rows one and three have two cited candidate identifications.",
+          "model": "nonzero-triangle",
+          "enumeration": "y=1 and y=3 separately",
+          "oeis": [
+            "A153229",
+            "A058006"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 25,
+          "source_pdf": "Ham (2019), section 25"
+        },
+        {
+          "id": "H2019-25-06",
+          "statement": "Three candidate identifications are given for the next diagonal.",
+          "model": "nonzero-triangle",
+          "enumeration": "y=x-1",
+          "oeis": [
+            "A001563",
+            "A094258",
+            "A094304"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 25,
+          "source_pdf": "Ham (2019), section 25"
+        }
+      ],
+      "source_text_line": 240
+    },
+    {
+      "number": 26,
+      "title": "Even double factorials",
+      "models": [
+        {
+          "id": "nonzero-wedge",
+          "step_set": "{(1,a),(1,-a):a in Z_>0}",
+          "region": "-x<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Every asserted sequence needs its own starting coordinate and index shift.",
+      "priority": "second",
+      "claims": [
+        {
+          "id": "H2019-26-01",
+          "statement": "The two boundary diagonals yield even double factorials.",
+          "model": "nonzero-wedge",
+          "enumeration": "y=x and y=-x separately",
+          "oeis": [
+            "A000165"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 26,
+          "source_pdf": "Ham (2019), section 26"
+        },
+        {
+          "id": "H2019-26-02",
+          "statement": "Column totals also yield even double factorials.",
+          "model": "nonzero-wedge",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A000165"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 26,
+          "source_pdf": "Ham (2019), section 26"
+        },
+        {
+          "id": "H2019-26-03",
+          "statement": "The two inward neighboring diagonals have the cited identification.",
+          "model": "nonzero-wedge",
+          "enumeration": "y=x-1 and y=1-x separately",
+          "oeis": [
+            "A014481"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 26,
+          "source_pdf": "Ham (2019), section 26"
+        },
+        {
+          "id": "H2019-26-04",
+          "statement": "Rows one and minus one have the cited identification.",
+          "model": "nonzero-wedge",
+          "enumeration": "y=1 and y=-1 separately",
+          "oeis": [
+            "A290044"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 26,
+          "source_pdf": "Ham (2019), section 26"
+        }
+      ],
+      "source_text_line": 250
+    },
+    {
+      "number": 27,
+      "title": "Squared and adjacent factorial products",
+      "models": [
+        {
+          "id": "odd-triangle",
+          "step_set": "{(1,2*a-1),(1,1-2*a):a in Z_>0}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "even-triangle",
+          "step_set": "{(1,2*a):a in Z}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Odd model has y=x mod 2. Even model has y=0 mod 2, so odd-height rows are zero. Endpoints near the origin, factorial tails, and column shifts require care.",
+      "priority": "second",
+      "claims": [
+        {
+          "id": "H2019-27-01",
+          "statement": "Even-height rows are associated with (n!)^2.",
+          "model": "odd-triangle",
+          "enumeration": "y=2a, fixed integer a>=0; reachable x only",
+          "oeis": [
+            "A001044"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 27,
+          "source_pdf": "Ham (2019), section 27"
+        },
+        {
+          "id": "H2019-27-02",
+          "statement": "Odd-height rows are associated with n!(n+1)!.",
+          "model": "odd-triangle",
+          "enumeration": "y=2a+1, fixed integer a>=0; reachable x only",
+          "oeis": [
+            "A010790"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 27,
+          "source_pdf": "Ham (2019), section 27"
+        },
+        {
+          "id": "H2019-27-03",
+          "statement": "Diagonal extraction is proposed to interleave squared and adjacent factorial products.",
+          "model": "odd-triangle",
+          "enumeration": "y=x-a, a>=0; even/odd sequence index",
+          "oeis": [
+            "A001044",
+            "A010790",
+            "A010551"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Odd a gives inaccessible diagonal in odd-step model; source does not resolve this.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 27,
+          "source_pdf": "Ham (2019), section 27"
+        },
+        {
+          "id": "H2019-27-04",
+          "statement": "Column totals give the interleaved sequence.",
+          "model": "odd-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A010551"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 27,
+          "source_pdf": "Ham (2019), section 27"
+        },
+        {
+          "id": "H2019-27-05",
+          "statement": "The even-step triangle fixed rows also give the interleaved sequence.",
+          "model": "even-triangle",
+          "enumeration": "y=a, fixed integer a",
+          "oeis": [
+            "A010551"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Only even nonnegative a are reachable.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 27,
+          "source_pdf": "Ham (2019), section 27"
+        },
+        {
+          "id": "H2019-27-06",
+          "statement": "The even-step triangle column totals give the interleaved sequence.",
+          "model": "even-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A010551"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "second",
+          "source_section": 27,
+          "source_pdf": "Ham (2019), section 27"
+        }
+      ],
+      "source_text_line": 258
+    },
+    {
+      "number": 28,
+      "title": "Permutations of odd order",
+      "models": [
+        {
+          "id": "even-wedge",
+          "step_set": "{(1,2*a):a in Z}",
+          "region": "-x<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "All odd-height rows vanish. The permutation description must be tested, not inferred from superficial initial agreement.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-28-01",
+          "statement": "Fixed rows are associated with counts of odd-order permutations in S_n.",
+          "model": "even-wedge",
+          "enumeration": "y=a, fixed integer a",
+          "oeis": [
+            "A000246"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 28,
+          "source_pdf": "Ham (2019), section 28"
+        },
+        {
+          "id": "H2019-28-02",
+          "statement": "Column totals are associated with the same sequence.",
+          "model": "even-wedge",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A000246"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 28,
+          "source_pdf": "Ham (2019), section 28"
+        }
+      ],
+      "source_text_line": null
+    },
+    {
+      "number": 29,
+      "title": "Permutation arrays with column condition modulo 3",
+      "models": [
+        {
+          "id": "multiple-3-triangle",
+          "step_set": "{(1,3*a):a in Z}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Only heights divisible by 3 are reachable. Source’s n by 1 array description uses row condition modulo 2 and column condition modulo 3; exact OEIS definition not independently retrieved.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-29-01",
+          "statement": "Fixed nonnegative rows are associated with the titled modular permutation-array count.",
+          "model": "multiple-3-triangle",
+          "enumeration": "y=a, fixed integer a>=0",
+          "oeis": [
+            "A264557"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 29,
+          "source_pdf": "Ham (2019), section 29"
+        },
+        {
+          "id": "H2019-29-02",
+          "statement": "Column totals are associated with the same sequence.",
+          "model": "multiple-3-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A264557"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 29,
+          "source_pdf": "Ham (2019), section 29"
+        }
+      ],
+      "source_text_line": 281
+    },
+    {
+      "number": 30,
+      "title": "Permutation arrays with column condition modulo 4",
+      "models": [
+        {
+          "id": "multiple-4-triangle",
+          "step_set": "{(1,4*a):a in Z}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Only heights divisible by 4 are reachable. Source’s n by 1 array description uses row condition modulo 2 and column condition modulo 4; exact OEIS definition not independently retrieved.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-30-01",
+          "statement": "Fixed nonnegative rows are associated with the titled modular permutation-array count.",
+          "model": "multiple-4-triangle",
+          "enumeration": "y=a, fixed integer a>=0",
+          "oeis": [
+            "A264635"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 30,
+          "source_pdf": "Ham (2019), section 30"
+        },
+        {
+          "id": "H2019-30-02",
+          "statement": "Column totals are associated with the same sequence.",
+          "model": "multiple-4-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A264635"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 30,
+          "source_pdf": "Ham (2019), section 30"
+        }
+      ],
+      "source_text_line": 288
+    },
+    {
+      "number": 31,
+      "title": "Permutation arrays with column condition modulo 5",
+      "models": [
+        {
+          "id": "multiple-5-triangle",
+          "step_set": "{(1,5*a):a in Z}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Only heights divisible by 5 are reachable. Source’s n by 1 array description uses row condition modulo 2 and column condition modulo 5; exact OEIS definition not independently retrieved.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-31-01",
+          "statement": "Fixed nonnegative rows are associated with the titled modular permutation-array count.",
+          "model": "multiple-5-triangle",
+          "enumeration": "y=a, fixed integer a>=0",
+          "oeis": [
+            "A264656"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 31,
+          "source_pdf": "Ham (2019), section 31"
+        },
+        {
+          "id": "H2019-31-02",
+          "statement": "Column totals are associated with the same sequence.",
+          "model": "multiple-5-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A264656"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 31,
+          "source_pdf": "Ham (2019), section 31"
+        }
+      ],
+      "source_text_line": 295
+    },
+    {
+      "number": 32,
+      "title": "Permutation arrays with column condition modulo 6",
+      "models": [
+        {
+          "id": "multiple-6-triangle",
+          "step_set": "{(1,6*a):a in Z}",
+          "region": "0<=y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Only heights divisible by 6 are reachable. Source’s n by 1 array description uses row condition modulo 2 and column condition modulo 6; exact OEIS definition not independently retrieved.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-32-01",
+          "statement": "Fixed nonnegative rows are associated with the titled modular permutation-array count.",
+          "model": "multiple-6-triangle",
+          "enumeration": "y=a, fixed integer a>=0",
+          "oeis": [
+            "A264701"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 32,
+          "source_pdf": "Ham (2019), section 32"
+        },
+        {
+          "id": "H2019-32-02",
+          "statement": "Column totals are associated with the same sequence.",
+          "model": "multiple-6-triangle",
+          "enumeration": "sum_y P(n,y)",
+          "oeis": [
+            "A264701"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 32,
+          "source_pdf": "Ham (2019), section 32"
+        }
+      ],
+      "source_text_line": 302
+    },
+    {
+      "number": 33,
+      "title": "Unit vertical progress",
+      "models": [
+        {
+          "id": "nonnegative-horizontal",
+          "step_set": "{(a,1):a in Z_>=0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "positive-horizontal",
+          "step_set": "{(a,1):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The parenthetic positive-increment alternative has different offsets and support. Pairing horizontal and vertical slices does not imply equal indexing.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-33-01",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=3 and x=2 separately",
+          "oeis": [
+            "A000217"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-02",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=3 and x=2 separately",
+          "oeis": [
+            "A000217"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-03",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=4 and x=3 separately",
+          "oeis": [
+            "A000292"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-04",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=4 and x=3 separately",
+          "oeis": [
+            "A000292"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-05",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=5 and x=4 separately",
+          "oeis": [
+            "A000332"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-06",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=5 and x=4 separately",
+          "oeis": [
+            "A000332"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-07",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=6 and x=5 separately",
+          "oeis": [
+            "A000389"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-08",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=6 and x=5 separately",
+          "oeis": [
+            "A000389"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-09",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=7 and x=6 separately",
+          "oeis": [
+            "A000579"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-10",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=7 and x=6 separately",
+          "oeis": [
+            "A000579"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-11",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=8 and x=7 separately",
+          "oeis": [
+            "A000580"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-12",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=8 and x=7 separately",
+          "oeis": [
+            "A000580"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-13",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=9 and x=8 separately",
+          "oeis": [
+            "A000581"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-14",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=9 and x=8 separately",
+          "oeis": [
+            "A000581"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-15",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "nonnegative-horizontal",
+          "enumeration": "y=10 and x=9 separately",
+          "oeis": [
+            "A000582"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        },
+        {
+          "id": "H2019-33-16",
+          "statement": "The paired fixed row and fixed column are associated with a simplex-number sequence.",
+          "model": "positive-horizontal",
+          "enumeration": "y=10 and x=9 separately",
+          "oeis": [
+            "A000582"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 33,
+          "source_pdf": "Ham (2019), section 33"
+        }
+      ],
+      "source_text_line": 309
+    },
+    {
+      "number": 34,
+      "title": "Horizontal progress and unit up/down increments",
+      "models": [
+        {
+          "id": "positive-x-unit-y",
+          "step_set": "{(a,1),(a,-1):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Heading says a>=0 but body says a>0. Including a=0 gives (0,1),(0,-1) cycles, hence infinitely many words at every reachable endpoint. Inventory adopts body model and flags incompatible heading.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-34-01",
+          "statement": "The whole count array may match a cited triangle.",
+          "model": "positive-x-unit-y",
+          "enumeration": "Full array, ordering unspecified",
+          "oeis": [
+            "A025177"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        },
+        {
+          "id": "H2019-34-02",
+          "statement": "Symmetric rows have the cited candidate identification.",
+          "model": "positive-x-unit-y",
+          "enumeration": "y=+1 and y=-1 separately",
+          "oeis": [
+            "A025179"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        },
+        {
+          "id": "H2019-34-03",
+          "statement": "Symmetric rows have the cited candidate identification.",
+          "model": "positive-x-unit-y",
+          "enumeration": "y=+2 and y=-2 separately",
+          "oeis": [
+            "A025180"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        },
+        {
+          "id": "H2019-34-04",
+          "statement": "Symmetric rows have the cited candidate identification.",
+          "model": "positive-x-unit-y",
+          "enumeration": "y=+3 and y=-3 separately",
+          "oeis": [
+            "A025181"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        },
+        {
+          "id": "H2019-34-05",
+          "statement": "The author expects the row family to continue.",
+          "model": "positive-x-unit-y",
+          "enumeration": "General fixed y=+k and y=-k, k>=1",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        },
+        {
+          "id": "H2019-34-06",
+          "statement": "Near-boundary diagonals have the cited candidate identification.",
+          "model": "positive-x-unit-y",
+          "enumeration": "y=x-2 and y=-x+2 separately",
+          "oeis": [
+            "A000124"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        },
+        {
+          "id": "H2019-34-07",
+          "statement": "Near-boundary diagonals have the cited candidate identification.",
+          "model": "positive-x-unit-y",
+          "enumeration": "y=x-3 and y=-x+3 separately",
+          "oeis": [
+            "A000292"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        },
+        {
+          "id": "H2019-34-08",
+          "statement": "Near-boundary diagonals have the cited candidate identification.",
+          "model": "positive-x-unit-y",
+          "enumeration": "y=x-4 and y=-x+4 separately",
+          "oeis": [
+            "A086274"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 34,
+          "source_pdf": "Ham (2019), section 34"
+        }
+      ],
+      "source_text_line": 321
+    },
+    {
+      "number": 35,
+      "title": "Quadratic diagonal counts",
+      "models": [
+        {
+          "id": "infinite-unit-y-plus-flat",
+          "step_set": "{(a,1),(a,-1):a in Z_>0} union {(1,0)}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "finite-as-written",
+          "step_set": "{(1,0),(1,1),(2,1),(3,1),(1,-1),(1,-2),(1,-3)}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "finite-cubic",
+          "step_set": "{(1,0),(1,1),(2,1),(3,1),(4,1),(1,-1)}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Finite alternative as printed is not symmetric under y reflection. Raw PDF text confirms cubic coefficient 4/3 (layout extraction garbles it).",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-35-01",
+          "statement": "The two named diagonals are associated with a(n)=2*n^2+1.",
+          "model": "infinite-unit-y-plus-flat",
+          "enumeration": "y=x-2 and y=-x+2 separately",
+          "oeis": [
+            "A058331"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Variable n may be shifted from x; finite model must be independently checked on both diagonals.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 35,
+          "source_pdf": "Ham (2019), section 35"
+        },
+        {
+          "id": "H2019-35-02",
+          "statement": "The two named diagonals are associated with a(n)=2*n^2+1.",
+          "model": "finite-as-written",
+          "enumeration": "y=x-2 and y=-x+2 separately",
+          "oeis": [
+            "A058331"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "Variable n may be shifted from x; finite model must be independently checked on both diagonals.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 35,
+          "source_pdf": "Ham (2019), section 35"
+        },
+        {
+          "id": "H2019-35-03",
+          "statement": "A cubic formula (4/3)*x^3-2*x^2+(11/3)*x-1 is tentatively suggested.",
+          "model": "finite-cubic",
+          "enumeration": "y=x-3, variable x as printed",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 35,
+          "source_pdf": "Ham (2019), section 35"
+        }
+      ],
+      "source_text_line": 337
+    },
+    {
+      "number": 36,
+      "title": "Branches in ordered trees",
+      "models": [
+        {
+          "id": "arbitrary-x-three-y",
+          "step_set": "{(a,0),(a,1),(a,-1):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-36-01",
+          "statement": "Axis counts are associated with total branches in ordered trees.",
+          "model": "arbitrary-x-three-y",
+          "enumeration": "y=0",
+          "oeis": [
+            "A051924"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 36,
+          "source_pdf": "Ham (2019), section 36"
+        },
+        {
+          "id": "H2019-36-02",
+          "statement": "The two neighboring rows have the cited identification.",
+          "model": "arbitrary-x-three-y",
+          "enumeration": "y=+1 and y=-1 separately",
+          "oeis": [
+            "A076540"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 36,
+          "source_pdf": "Ham (2019), section 36"
+        },
+        {
+          "id": "H2019-36-03",
+          "statement": "The two near-boundary diagonals have the cited identification.",
+          "model": "arbitrary-x-three-y",
+          "enumeration": "y=x-2 and y=-x+2 separately",
+          "oeis": [
+            "A084849"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 36,
+          "source_pdf": "Ham (2019), section 36"
+        }
+      ],
+      "source_text_line": 344
+    },
+    {
+      "number": 37,
+      "title": "Vertical upstep plus three horizontal-progress types",
+      "models": [
+        {
+          "id": "vertical-plus-three-y",
+          "step_set": "{(0,1)} union {(a,0),(a,1),(a,-1):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The model is not invariant under y reflection; y=+1 and y=-1 equality cannot be presumed. Whole-array ordering absent. Each fixed endpoint has finitely many paths despite an unbounded positive vertical step.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-37-01",
+          "statement": "The full count array may match a cited triangle.",
+          "model": "vertical-plus-three-y",
+          "enumeration": "Full array, ordering unspecified",
+          "oeis": [
+            "A054120"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 37,
+          "source_pdf": "Ham (2019), section 37"
+        },
+        {
+          "id": "H2019-37-02",
+          "statement": "Axis counts have the cited identification.",
+          "model": "vertical-plus-three-y",
+          "enumeration": "y=0",
+          "oeis": [
+            "A054122"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 37,
+          "source_pdf": "Ham (2019), section 37"
+        },
+        {
+          "id": "H2019-37-03",
+          "statement": "Rows of heights plus/minus one are given the same candidate identification.",
+          "model": "vertical-plus-three-y",
+          "enumeration": "y=+1 and y=-1 separately",
+          "oeis": [
+            "A052392"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 37,
+          "source_pdf": "Ham (2019), section 37"
+        },
+        {
+          "id": "H2019-37-04",
+          "statement": "A fixed column has the cited identification.",
+          "model": "vertical-plus-three-y",
+          "enumeration": "x=3, y increasing",
+          "oeis": [
+            "A054121"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 37,
+          "source_pdf": "Ham (2019), section 37"
+        }
+      ],
+      "source_text_line": 351
+    },
+    {
+      "number": 38,
+      "title": "First differences of central Delannoy numbers",
+      "models": [
+        {
+          "id": "vertical-plus-two-y",
+          "step_set": "{(0,1)} union {(a,1),(a,-1):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The step set is not symmetric under y reflection. Header references A001850, while the claimed difference sequence is A110170; offsets need checking.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-38-01",
+          "statement": "Axis counts are associated with first differences of central Delannoy numbers.",
+          "model": "vertical-plus-two-y",
+          "enumeration": "y=0",
+          "oeis": [
+            "A110170",
+            "A001850"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "A001850 names the parent sequence, not an asserted equal counting sequence.",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 38,
+          "source_pdf": "Ham (2019), section 38"
+        },
+        {
+          "id": "H2019-38-02",
+          "statement": "Rows plus/minus one have the same cited candidate identification.",
+          "model": "vertical-plus-two-y",
+          "enumeration": "y=+1 and y=-1 separately",
+          "oeis": [
+            "A104550"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 38,
+          "source_pdf": "Ham (2019), section 38"
+        },
+        {
+          "id": "H2019-38-03",
+          "statement": "A fixed column has the cited identification.",
+          "model": "vertical-plus-two-y",
+          "enumeration": "x=2, y increasing",
+          "oeis": [
+            "A005893"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 38,
+          "source_pdf": "Ham (2019), section 38"
+        }
+      ],
+      "source_text_line": 360
+    },
+    {
+      "number": 39,
+      "title": "Vertical upstep with horizontal or northeast progress",
+      "models": [
+        {
+          "id": "vertical-plus-nonnegative-y",
+          "step_set": "{(0,1)} union {(a,0),(a,1):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Support is the nonnegative quadrant without a separately stated constraint; all slice offsets remain to be checked.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-39-01",
+          "statement": "A fixed row has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=1",
+          "oeis": [
+            "A001792"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-02",
+          "statement": "A fixed row has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=2",
+          "oeis": [
+            "A001793"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-03",
+          "statement": "A fixed row has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=3",
+          "oeis": [
+            "A001794"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-04",
+          "statement": "A fixed row has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=4",
+          "oeis": [
+            "A006974"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-05",
+          "statement": "A fixed row has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=5",
+          "oeis": [
+            "A006975"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-06",
+          "statement": "A fixed row has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=6",
+          "oeis": [
+            "A006976"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-07",
+          "statement": "A fixed row has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=7",
+          "oeis": [
+            "A209404"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-08",
+          "statement": "A fixed column has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "x=2, y increasing",
+          "oeis": [
+            "A001105"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-09",
+          "statement": "A fixed column has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "x=3, y increasing",
+          "oeis": [
+            "A002492"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-10",
+          "statement": "A fixed column has the cited identification.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "x=4, y increasing",
+          "oeis": [
+            "A072819"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-11",
+          "statement": "A diagonal may match the cited sequence.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "y=x+2",
+          "oeis": [
+            "A275827"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        },
+        {
+          "id": "H2019-39-12",
+          "statement": "Antidiagonal totals form an unidentified sequence.",
+          "model": "vertical-plus-nonnegative-y",
+          "enumeration": "sum over x+y=a, fixed integer a",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 39,
+          "source_pdf": "Ham (2019), section 39"
+        }
+      ],
+      "source_text_line": 367
+    },
+    {
+      "number": 40,
+      "title": "Symmetric variable-length positive increments",
+      "models": [
+        {
+          "id": "positive-L",
+          "step_set": "{(1,a),(a,1):a in Z_>0}",
+          "region": "Z^2 (no boundary stated)",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "positive-L-below",
+          "step_set": "{(1,a),(a,1):a in Z_>0}",
+          "region": "y<=x",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "The repeated vector (1,1) is one step, not two colors. Several slash-separated OEIS alternatives are tentative; array linearization and slice offsets are unspecified.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-40-01",
+          "statement": "The unrestricted diagonal may match the cited sequence.",
+          "model": "positive-L",
+          "enumeration": "y=x",
+          "oeis": [
+            "A171155"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 40,
+          "source_pdf": "Ham (2019), section 40"
+        },
+        {
+          "id": "H2019-40-02",
+          "statement": "The unrestricted paired row/column has several candidate matches.",
+          "model": "positive-L",
+          "enumeration": "y=3 and x=3 separately",
+          "oeis": [
+            "A022856",
+            "A089071",
+            "A152948",
+            "A133263"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 40,
+          "source_pdf": "Ham (2019), section 40"
+        },
+        {
+          "id": "H2019-40-03",
+          "statement": "The unrestricted full array may match a cited triangle.",
+          "model": "positive-L",
+          "enumeration": "Full array, ordering unspecified",
+          "oeis": [
+            "A047080"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 40,
+          "source_pdf": "Ham (2019), section 40"
+        },
+        {
+          "id": "H2019-40-04",
+          "statement": "The boundary-restricted diagonal has three candidate matches.",
+          "model": "positive-L-below",
+          "enumeration": "y=x",
+          "oeis": [
+            "A082582",
+            "A086581",
+            "A025242"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 40,
+          "source_pdf": "Ham (2019), section 40"
+        },
+        {
+          "id": "H2019-40-05",
+          "statement": "A restricted row has two candidate matches.",
+          "model": "positive-L-below",
+          "enumeration": "y=3",
+          "oeis": [
+            "A000124",
+            "A152947"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 40,
+          "source_pdf": "Ham (2019), section 40"
+        },
+        {
+          "id": "H2019-40-06",
+          "statement": "Another restricted row has the cited candidate match.",
+          "model": "positive-L-below",
+          "enumeration": "y=4",
+          "oeis": [
+            "A177787"
+          ],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "unresolved",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 40,
+          "source_pdf": "Ham (2019), section 40"
+        }
+      ],
+      "source_text_line": null
+    },
+    {
+      "number": 41,
+      "title": "Calculated values",
+      "models": [
+        {
+          "id": "table-1",
+          "step_set": "{(1,1),(0,-2)}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-2",
+          "step_set": "{(1,1),(0,-3)}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-3",
+          "step_set": "{(1,1),(0,-4)}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-4",
+          "step_set": "{(1,1)} union {(1,-2k):k>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-5",
+          "step_set": "{(1,1)} union {(0,1-2k):k>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-6",
+          "step_set": "{(1,1)} union {(1,-k):k>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-7",
+          "step_set": "{(1,-1)} union {(1,k):k>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-8",
+          "step_set": "{(1,1)} union {(0,-k):k>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-9",
+          "step_set": "{(1,1)} union {(0,-2k):k>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        },
+        {
+          "id": "table-10",
+          "step_set": "{(1,1)} union {(0,-3k):k>0}",
+          "region": "y>=0",
+          "start": "(0,0)",
+          "objects": "Finite ordered step words, including the empty word; every visited vertex must lie in the region. Sets, not multisets."
+        }
+      ],
+      "ambiguities": "Ten printed arrays supply computational evidence only. The source does not specify a machine-readable table or algorithm version. This inventory has read every table caption and displayed array, but does not claim independent reproduction.",
+      "priority": "later",
+      "claims": [
+        {
+          "id": "H2019-41-01",
+          "statement": "Table 1 prints endpoint counts for the model of section 17.",
+          "model": "table-1",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-02",
+          "statement": "Table 2 prints endpoint counts for the model of section 17.",
+          "model": "table-2",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-03",
+          "statement": "Table 3 prints endpoint counts for the model of section 17.",
+          "model": "table-3",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-04",
+          "statement": "Table 4 prints endpoint counts for the model of section 18.",
+          "model": "table-4",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-05",
+          "statement": "Table 5 prints endpoint counts for the model of section 19.",
+          "model": "table-5",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-06",
+          "statement": "Table 6 prints endpoint counts for the model of section 20.",
+          "model": "table-6",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-07",
+          "statement": "Table 7 prints endpoint counts for the model of section 20.",
+          "model": "table-7",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-08",
+          "statement": "Table 8 prints endpoint counts for the model of section 21.",
+          "model": "table-8",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-09",
+          "statement": "Table 9 prints endpoint counts for the model of section 22.",
+          "model": "table-9",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        },
+        {
+          "id": "H2019-41-10",
+          "statement": "Table 10 prints endpoint counts for the model of section 23.",
+          "model": "table-10",
+          "enumeration": "Finite printed endpoint array",
+          "oeis": [],
+          "verified_terms": 0,
+          "literature": "Source attribution only; OEIS identities and novelty not independently established here.",
+          "proof_status": "source context",
+          "ambiguities": "",
+          "generalization": "Study finite relevant predecessor sets, transfer operators, and appropriate coefficient extraction.",
+          "priority": "later",
+          "source_section": 41,
+          "source_pdf": "Ham (2019), section 41"
+        }
+      ],
+      "source_text_line": 396
+    }
+  ]
+}

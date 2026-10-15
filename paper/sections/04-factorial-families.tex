@@ -1,0 +1,41 @@
+\section{Factorial-type families}
+\subsection{Complete columns}
+\begin{proposition}\label{prop:complete}
+For $S=\{(1,a):a\in\Z\}$ in $0\le y\le x$, one has $P_n(y)=n!$ for $0\le y\le n$ and $T_n=(n+1)!$.
+For odd vertical increments in $-x\le y\le x$, one has $P_n(y)=n!$ when $|y|\le n$ and $y\equiv n\pmod2$, and zero otherwise. Again $T_n=(n+1)!$.
+\end{proposition}
+\begin{proof}
+The first model has $n+1$ vertices in column $n$, each joined to all $n$ vertices in column $n-1$. In the second model reachable heights are $-n,-n+2,\ldots,n$. Consecutive reachable columns have opposite parity, so every pair is joined by an allowed odd increment. Apply Theorem~\ref{thm:layers}.
+\end{proof}
+In the second model the diagonal $y=x+a$ is inaccessible for odd $a$, or for $a>0$. Thus the source's unrestricted diagonal wording requires a support qualification.
+
+\subsection{Deleting zero vertical increments}
+\begin{proposition}\label{prop:delete}
+For nonzero integer vertical increments in $0\le y\le x$, $T_n=n!$, and $P_n(n)=(n-1)!$ for $n\ge1$. Put $A_0=0$ and $A_m=\sum_{k=1}^m(-1)^{m-k}k!$. Then $P_n(0)=A_{n-1}$ for $n\ge1$.
+For the same step set in $-x\le y\le x$, $T_n=2^n n!$ and $P_n(\pm n)=2^{n-1}(n-1)!$ for $n\ge1$.
+\end{proposition}
+\begin{proof}
+In the triangle, every old height has $n$ successors among $0,\ldots,n$: exactly its own height is excluded. In the cone, it has $2n$ successors among $-n,\ldots,n$. The successor principle gives both totals. Every predecessor can reach each newly introduced extreme height, giving its count $T_{n-1}$.
+
+For an existing target height $y$ in either model,
+\begin{equation}\label{eq:subtract}
+P_n(y)=T_{n-1}-P_{n-1}(y).
+\end{equation}
+Indeed, append a final step to each previous path except those already ending at $y$, which would require the forbidden increment zero. In the triangle $P_1(0)=0=A_0$, so \eqref{eq:subtract} and $A_m=m!-A_{m-1}$ prove the alternating-factorial assertion by induction. The origin has $P_0(0)=1$ and must be treated separately.
+\end{proof}
+The last argument is the known recurrence explanation recorded by Rorabaugh \cite{Rorabaugh}. In the cone, column two has counts $(2,1,2,1,2)$ at heights $-2,\ldots,2$, demonstrating nonuniformity. Boundary counts give even double factorials with a shift: $P_n(n)=(2n-2)!!$, whereas $T_n=(2n)!!$.
+
+\subsection{Parity and factorial products}
+\begin{proposition}\label{prop:parity}
+In $0\le y\le x$, odd vertical increments give
+\[
+P_n(y)=B_n:=\lfloor n/2\rfloor!\,\lceil n/2\rceil!
+\]
+on heights $0\le y\le n$ with $y\equiv n\pmod2$, and zero elsewhere. Even vertical increments give the same count on even heights and zero elsewhere. Both column totals are $B_{n+1}$.
+\end{proposition}
+\begin{proof}
+In the odd model consecutive reachable columns connect completely, and the previous column has $\lfloor(n+1)/2\rfloor$ reachable heights. In the even model all reachable heights are even, and the previous column has the same cardinality. Thus both common endpoint counts are
+$\prod_{j=1}^n\lfloor(j+1)/2\rfloor=\lfloor n/2\rfloor!\lceil n/2\rceil!$.
+Each column has $\lfloor n/2\rfloor+1$ reachable endpoints, so its total is $B_{n+1}$.
+\end{proof}
+Consequently $B_{2m}=(m!)^2$ and $B_{2m+1}=m!(m+1)!$. For odd increments the diagonal $y=x-a$ is zero whenever $a$ is odd. For even increments every odd horizontal row is zero. These are counterexamples to literal unqualified readings, rather than failures of the corrected product formulas.

@@ -1,0 +1,12 @@
+\section{Two layered enumeration principles}
+\begin{theorem}[Elementary layer products]\label{thm:layers}
+Consider a simple directed graph with finite layers $V_0,\ldots,V_n$, with $V_0=\{o\}$ and all edges directed from one layer to the next. The length-zero product is one.
+\begin{enumerate}
+\item If every vertex of $V_j$ has $d_j$ predecessors, then every vertex of $V_n$ has $\prod_{j=1}^n d_j$ paths from $o$.
+\item If every vertex of $V_{j-1}$ has $e_j$ successors, the total number of paths to $V_n$ is $\prod_{j=1}^n e_j$.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+For the first assertion, all counts in the initial layer equal one. If the common previous-layer count is $q$, each next-layer count is the sum of $d_j$ copies of $q$. Induction proves the formula, also when $q$ or $d_j$ vanishes. The assertion for an empty endpoint layer is vacuous. For the second assertion, each path to $V_{j-1}$ has exactly $e_j$ extensions. Thus the total is multiplied by $e_j$ at each step.
+\end{proof}
+Complete bipartite layers satisfy both hypotheses, but neither principle requires completeness. Successor regularity alone does not imply uniform endpoint counts.
