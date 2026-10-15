@@ -1,20 +1,19 @@
 \documentclass[11pt]{article}
 \input{preamble}
-\title{Structural Methods for Enumerating Restricted Lattice Paths}
+\title{Residue Structure and Inverse Enumeration in Restricted Lattice Paths}
 \author{Nicholas Ham}
 \date{Research draft, 16 October 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-We study residue compression and combinatorial encodings for restricted lattice walks. For triangular layers we prove a finite rigidity criterion: all transitions through a horizon $N\ge q$ preserve every vector constant on residues modulo $q$ if and only if the allowed-jump indicator is periodic modulo $q$ on the observable difference window. An exact boundary criterion handles general interval layers. We also give explicit classical excursion--tree--Dyck bijections with the size conventions needed to unify several earlier observations, alongside factorial examples. The classification is independently verified here; its historical priority remains unresolved. Classical bijections and previously proved factorial results are attributed separately.
+We distinguish structural residue compression from uniformity along an actual counting trajectory. A boundary comparison graph characterizes weighted interval transitions preserving residue-constant inputs and yields finite triangular rigidity and scalar rigidity for arbitrary widening funnels. For actual trajectories, finite nonnegative jump support precludes nonextinct eventual residue uniformity on growing windows with sufficiently large predecessor cores, including rational cones. Complete labelled endpoint data recover the observable jump weights under two nonzero boundary pivots. A positive finite-horizon example shows why structural and trajectory converses differ. These independently proved results have unresolved historical priority; classical enumerations are supporting applications rather than novelty claims.
 \end{abstract}
 \input{sections/01-introduction}
 \input{sections/02-preliminaries}
-\input{sections/03-enumeration-framework}
 \input{sections/07-general-results}
-\input{sections/04-factorial-families}
-\input{sections/05-catalan-families}
-\input{sections/06-generating-functions}
+\input{sections/09-actual-trajectories}
+\input{sections/10-inverse-enumeration}
+\input{sections/11-combinatorial-context}
 \input{sections/08-conclusion}
 \paragraph{Acknowledgement of assistance.} OpenAI Codex assisted with source inventory, mathematical derivations, exact Python experiments, drafting and internal adversarial reviews. These reviews are not external peer review. Nicholas Ham is the sole listed author; human mathematical sign-off and submission-policy review remain outstanding. Earlier joint work with James East is cited below; no participation in this project is implied.
 \bibliographystyle{plain}

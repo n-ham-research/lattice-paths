@@ -1,4 +1,8 @@
-\section{Preliminaries}
-A path is a finite word in a step set $S\subseteq\Z^2$, with partial sums beginning at $(0,0)$. It is admissible in a region $R$ when all partial sums lie in $R$. We count the empty word once. The regions used below are convex, so requiring whole segments to remain in the region gives the same condition. Step sets have no multiplicities.
+\section{Weighted interval walks}
+Let $I_n=[A_n,B_n]\cap\Z$ be finite intervals, with $I_0=\{0\}$ for origin counts, and let $w:\Z\to R$ be time-independent jump weights. A word uses steps $(1,d)$, stays in the prescribed interval at every vertex, and has weight the product of its jump weights. The empty word has weight one. Indicator weights recover ordinary step sets without multiplicities. Every finite-horizon sum is finite even for infinite support. Segment restrictions are not imposed for arbitrary moving intervals; in a convex cone vertex and segment containment agree.
 
-All models proved here have horizontal increment one. Write $P_n(y)$ for the number of admissible paths to $(n,y)$ and $T_n=\sum_yP_n(y)$. Their finite columns make these counts finite despite infinite step sets. Unreachable endpoints have count zero. These conventions are not imposed on every model in the original collection, some of which have vertical steps.
+The labelled endpoint rows satisfy
+\[
+p_0(0)=1,\qquad p_n(y)=\sum_{z\in I_{n-1}}w(y-z)p_{n-1}(z).
+\]
+A row is \emph{$q$-residue-uniform} if its values agree on each residue cell modulo $q$. Structural preservation tests \emph{every} such input, whereas trajectory uniformity tests only the rows generated from the origin. Nonextinction means every row is nonzero. For nonnegative weights a zero row forces all later rows zero. Ring coefficients suffice for structural results; mass comparisons require nonnegative real weights, and reconstruction uses a field.

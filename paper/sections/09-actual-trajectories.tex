@@ -1,0 +1,38 @@
+\section{An obstruction for actual counting trajectories}
+Structural preservation is stronger than uniformity of one actual trajectory. The following result addresses the latter without requiring positive counts in every residue.
+\begin{theorem}[Finite-range mass obstruction]\label{thm:mass}
+Let $w:\Z\to\mathbb R_{\ge0}$ have finite nonempty support $S$, with $m=\min S$, $M=\max S$. Let $I_n=[A_n,B_n]\cap\Z$ be finite integer intervals, and put
+\[
+J_n=I_n\cap[A_{n-1}+M,B_{n-1}+m].
+\]
+Suppose actual rows $p_b,\ldots,p_h$ are $q$-residue-uniform, every interval in this block has at least $q$ vertices, and each $J_n$, $b<n\le h$, has at least $q$ consecutive vertices. If
+\[
+\left\lfloor |I_h|/q\right\rfloor>\left\lceil |I_b|/q\right\rceil,
+\]
+then $p_b=0$.
+\end{theorem}
+\begin{proof}
+Let $c_n(s)$ be the common value in residue $s$, $C_n=\sum_s c_n(s)$, and $P_n=\sum_{y\in I_n}p_n(y)$. For each residue choose a target in $J_n$. All supported predecessors are admitted, so
+\[
+c_n(s)=\sum_d w(d)c_{n-1}(s-d),\qquad C_n=K C_{n-1},\quad K=\sum_d w(d)>0.
+\]
+Each word has total outgoing extension weight at most $K$, hence $P_n\le K P_{n-1}$. If $C_b>0$, residue multiplicities give
+\[
+\lfloor |I_h|/q\rfloor C_h\le P_h\le K^{h-b}P_b
+\le K^{h-b}\lceil |I_b|/q\rceil C_b.
+\]
+Substitute $C_h=K^{h-b}C_b$ and cancel, contradicting the strict inequality. If $C_b=0$, nonnegativity gives $p_b=0$.
+\end{proof}
+
+\begin{proposition}\label{prop:cones}
+If $|I_n|\to\infty$ and the full-predecessor cores $J_n$ eventually contain $q$ consecutive vertices, eventual residue uniformity forces extinction. In particular this holds when interval widths diverge and successive endpoint movements are bounded, including rational cones with bounded periodic boundary offsets.
+\end{proposition}
+\begin{proof}
+Choose any sufficiently late $b$ and then $h$ giving the strict multiplicity gap; apply Theorem~\ref{thm:mass}. For bounded endpoint movements $D_A,D_B$, the size of $J_n$ is at least $|I_{n-1}|-C$, where $C=\max(D_A,M)-\min(-D_B,m)$. Diverging widths give the core condition. Rounded affine boundaries of distinct slopes have diverging widths and bounded endpoint movements, as do their bounded periodic perturbations.
+\end{proof}
+
+For the triangle set $L=\max(0,M)$ and $R=\max(0,1-m)$. If
+\[
+b\ge\max(q-1,L+R+q-2),\qquad h=q\bigl(\lceil(b+1)/q\rceil+1\bigr)-1,
+\]
+then uniformity of rows $b,\ldots,h$ forces $p_b=0$. Here $h\le b+2q-1$, a sufficient bound, not claimed optimal. Consequently a finite nonempty step set cannot give a nonextinct eventually residue-uniform triangular trajectory. Infinite support and signed weights are not covered by the mass proof.

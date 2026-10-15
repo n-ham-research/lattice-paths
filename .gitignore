@@ -3,3 +3,5 @@ __pycache__/
 *.py[cod]
 paper/build/
 *.synctex.gz
+
+briefing/build/

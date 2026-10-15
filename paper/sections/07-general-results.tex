@@ -1,5 +1,5 @@
 \section{Residue regularity and finite rigidity}
-Fix $q\ge1$, $D\subseteq\Z$ and $f=1_D$. For finite integer intervals $I,J$, set
+Fix an integer $q\ge1$ and jump weights $f:\Z\to R$ into a commutative ring. For finite integer intervals $I,J$, set
 \[
 (Tp)(y)=\sum_{z\in I}f(y-z)p(z),\qquad y\in J.
 \]
@@ -39,7 +39,7 @@ For $1\le d\le N$, put $r=q-d$ if $d<q$, and $r=0$ otherwise; set $y=d+r-q$. The
 \end{proof}
 
 \begin{proposition}[Infinite classification and quotient]\label{prop:periodic}
-All triangular transitions are residue-regular modulo $q$ if and only if $D$ is a union of full residue classes modulo $q$. In that case, for every nonempty target residue cell $s$, the exact count per endpoint satisfies
+All triangular transitions are residue-regular modulo $q$ if and only if $f$ is $q$-periodic. For indicator weights this says that $D$ is a union of full residue classes. In that case, for every nonempty target residue cell $s$, the exact count per endpoint satisfies
 \[
 p_n(s)=\sum_{r=0}^{q-1}m_{n-1,r}f(s-r)p_{n-1}(r),
 \]
@@ -48,4 +48,15 @@ where $m_{n-1,r}=|I_{n-1}\cap(r+q\Z)|$; absent target cells can be assigned valu
 \begin{proof}
 Every pair of congruent integers lies in $W_N$ for sufficiently large $N$, so Theorem~\ref{thm:rigidity} proves necessity. Periodicity gives sufficiency and the displayed predecessor counts. The singleton initial layer is block-constant, so induction applies to actual path counts.
 \end{proof}
-For $q=1$, only $D=\Z$ and $D=\varnothing$ preserve the entire constant-input space at every layer. This is not a classification from one trajectory: $D=\{-1\}$ has zero positive-length counts throughout the triangle, hiding irregular transitions. Nor does one regular transition force periodicity: $D=\{-1,1\}$ gives equal predecessor sums from $\{0,1\}$ to $\{0,1,2\}$, but fails the preceding transition. Arbitrary moving intervals need not impose periodicity; Proposition~\ref{prop:boundary}, rather than the triangular converse, is their exact criterion.
+For indicator weights and $q=1$, only $D=\Z$ and $D=\varnothing$ preserve the entire constant-input space at every layer. This is not a classification from one trajectory: $D=\{-1\}$ has zero positive-length counts throughout the triangle, hiding irregular transitions. Nor does one regular transition force periodicity: $D=\{-1,1\}$ gives equal predecessor sums from $\{0,1\}$ to $\{0,1,2\}$, but fails the preceding transition. Arbitrary moving intervals need not impose periodicity; Proposition~\ref{prop:boundary}, rather than the triangular converse, is their exact criterion.
+
+\subsection{Boundary graphs and widening funnels}
+For any finite interval-layer sequence, let $U=\bigcup_n(I_n-I_{n-1})$. Join $y-a_r+q$ to $y-b_r$ for every comparison in Proposition~\ref{prop:boundary}; both values lie in $U$. That proposition immediately implies that all transitions preserve residue-constant inputs precisely when $f$ is constant on each connected component. Every edge joins congruent differences. Thus preservation forces $q$-periodicity on $U$ for every weight function if and only if each residue fiber is connected: a disconnected fiber is separated by a component indicator. This last necessity uses a nonzero coefficient ring.
+
+\begin{theorem}[Arbitrarily widening funnels]\label{thm:funnels}
+Let $0=s_0\le s_1\le\cdots\le s_N$ be integers and $I_n=[cn,cn+s_n]\cap\Z$, with $c\in\Z$. All transitions preserve constant inputs if and only if $f$ is constant on $[c-s_{N-1},c+s_N]\cap\Z$. If the widths are unbounded, preservation at all layers forces $f$ constant on $\Z$.
+\end{theorem}
+\begin{proof}
+Shear to $c=0$. At a transition with previous width $M$ and new width $K\ge M$, boundary edges are $\{t,t+M+1\}$ for $-M\le t\le K-M-1$. They connect each congruence class modulo $M+1$ within $[-M,K]$. The first transition has $M=0$ and connects its entire window. Inductively the old connected window $[-s_{n-2},M]$ lies in the new one and has at least $M+1$ consecutive vertices. It meets every congruence class modulo $M+1$, so all new vertices connect to it. Component constancy proves necessity; constant weights suffice. Unbounded widths exhaust all differences.
+\end{proof}
+This includes every integer cone $[an,bn]$, $a<b$, with width $s_n=(b-a)n$, and permits arbitrary width jumps. Nonmonotonicity matters: alternating layers $\{0\},\{0,1\}$ preserve constants for $f(0)=f(1)=1,f(-1)=0$, but do not force equality on the observable set $\{-1,0,1\}$. For $q>1$ the analogous integer-cone classification remains open here. The triangle's first informative horizon is $q$; before it all target cells are singletons. For $q\ge3$, $N=q-1$ and $f=1_{\{q-1\}}$ fail periodicity on $W_N$ despite vacuous preservation.

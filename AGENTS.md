@@ -1,6 +1,6 @@
 # Research instructions
 
-Human author: Nicholas Ham. Read research/handover-phase2.md, research/conjecture-audit.md, research/phase2-claim-status.json and reviews/review-log.md before new research.
+Human author: Nicholas Ham. Read research/handover-phase3.md, research/conjecture-audit.md, research/phase3-claim-status.json and reviews/review-log.md before new research.
 
 - Define the step set, start, endpoint, region, vertex/segment convention, empty path and indexing before counting.
 - Distinguish literature results, independently verified source observations, candidate extensions, conjectures, counterexamples and open questions. No novelty claim without literature comparison.

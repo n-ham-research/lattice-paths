@@ -1,4 +1,6 @@
-# Mathematical summary for potential research discussion
+# Phase 2 mathematical summary (historical snapshot)
+
+Current Phase 3 results and limitations are in [handover-phase3.md](handover-phase3.md); the discussion briefing is [../briefing/main.tex](../briefing/main.tex). The text below preserves the Phase 2 state and its original theorem numbering.
 
 Nicholas Ham — working research, 16 October 2026. This note is prepared for possible later sharing; nobody has been contacted and no collaboration is assumed.
 

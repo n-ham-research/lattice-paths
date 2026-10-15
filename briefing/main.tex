@@ -1,0 +1,105 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newcommand{\Z}{\mathbb Z}
+\setlength{\parskip}{5pt}
+\setlength{\parindent}{0pt}
+\title{Restricted Lattice Paths:\\Residue Rigidity, Trajectory Obstructions and Inverse Data}
+\author{Nicholas Ham}
+\date{Mathematical briefing for possible discussion with James East\\16 October 2026 --- draft, not sent}
+\begin{document}
+\maketitle
+\section*{1. Motivation and the structural question}
+This revisits Ham's 2019 conjecture collection through the distinction between words, endpoints and constrained transitions in East--Ham [1,2]. The first arXiv version already proves the main factorial and alternating-endpoint examples (Example 3.14); they are background. The present question is whether the emerging residue structure gives a useful classification or inverse-enumeration problem beyond those identities. Priority of the results below remains unresolved. This briefing invites mathematical scrutiny rather than asserts publication readiness.
+
+Let $I_n$ be finite integer intervals, with origin start $I_0=\{0\}$, and let $f(d)$ weight the step $(1,d)$. Words must remain in the admitted interval at each vertex. Indicator weights give ordinary step sets. With one empty word,
+\[
+p_n(y)=\sum_{z\in I_{n-1}}f(y-z)p_{n-1}(z).
+\]
+A row is residue-uniform modulo $q$ when values agree at congruent admitted heights. We must distinguish preservation of \emph{every} residue-constant input by a transition from uniformity of this one actual trajectory.
+
+\textbf{Finite structural rigidity (proved).} For $I_n=\{0,\ldots,n\}$ and $N\ge q$, all transitions through $N$ preserve every residue-constant input if and only if $f$ is $q$-periodic on $W_N=\{1-N,\ldots,N\}$. At all horizons this forces a globally periodic kernel. For indicator weights, the allowed jumps are exactly unions of residue classes. The argument works over commutative rings; it does not use positivity.
+
+The key comparison, for a source residue cell with minimum $a_r$ and maximum $b_r$, is
+\[
+C_r(y+q)-C_r(y)=f(y-a_r+q)-f(y-b_r).
+\]
+It reduces transition regularity to pairwise equalities of jump weights. Comparing consecutive triangular layers isolates new individual differences. The first informative horizon is $q$: earlier target cells are singletons. For $q\ge3$, $N=q-1$ admits nonperiodic indicators on the observable window despite vacuous preservation. Earlier vacuous equivalences for small moduli should not be confused with informative verification.
+
+The cell-indicator invariant-space principle is classical equitable-partition theory [3]. The exact growing-window converse has a complete independent proof, but whether it is known or substantial remains a question for specialist comparison.
+\newpage
+\section*{2. Geometry and actual counting trajectories}
+\textbf{Weighted boundary graph (proved).} For any finite interval sequence, join the two observable differences in each displayed boundary equality. All transitions preserve residue-constant inputs exactly when $f$ is constant on each graph component. Thus geometry forces periodicity precisely when every observable residue fiber is connected. This is an equality-constraint reformulation, not by itself a proposed new theorem.
+
+\textbf{Widening-funnel consequence (proved).} For any integer $c$ and nondecreasing widths $0=s_0\le\cdots\le s_N$, layers $I_n=[cn,cn+s_n]\cap\Z$ preserve constant inputs exactly when $f$ is constant on $[c-s_{N-1},c+s_N]\cap\Z$. Widths may jump arbitrarily. At a sheared transition from $[0,M]$ to $[0,K]$, graph edges have length $M+1$. The old connected difference window contains every residue modulo $M+1$, connecting all new vertices. This includes genuine two-sided integer cones. The analogous general-$q$ cone converse is not proved.
+
+\begin{theorem}[Actual-trajectory obstruction, proved]
+Let $f\ge0$ have finite nonempty support $S$, with $m=\min S$, $M=\max S$, and let $I_n=[A_n,B_n]\cap\Z$. Put
+\[
+J_n=I_n\cap[A_{n-1}+M,B_{n-1}+m].
+\]
+If rows $b,\ldots,h$ are residue-uniform modulo $q$, all have at least $q$ vertices, every intervening $J_n$ has $q$ consecutive vertices, and
+\[
+\lfloor|I_h|/q\rfloor>\lceil|I_b|/q\rceil,
+\]
+then row $b$ is zero.
+\end{theorem}
+\textbf{Proof idea.} Let $c_n(s)$ be the common value in residue $s$, $C_n=\sum_s c_n(s)$, $P_n=\sum_y p_n(y)$ and $K=\sum_d f(d)>0$. Interior targets supply $C_n=KC_{n-1}$, but outgoing mass gives $P_n\le KP_{n-1}$. The number of copies of each residue value increases with the layer width. A nonzero row would imply
+\[
+\lfloor|I_h|/q\rfloor C_h\le P_h\le K^{h-b}P_b
+\le K^{h-b}\lceil|I_b|/q\rceil C_b,
+\]
+contradicting $C_h=K^{h-b}C_b$. Individual residues may have zero counts.
+
+Consequently, with diverging widths and bounded successive endpoint movements, a nonextinct actual trajectory cannot be eventually residue-uniform for finite jump support. This includes rational or real cones with bounded periodic boundary offsets. In the triangle, at most $2q$ sufficiently late consecutive uniform rows already force zero; this sufficient bound is not claimed optimal. Signed weights and infinite support are outside the mass argument.
+
+These are actual-trajectory obstructions, not a proof that positivity forces periodicity for infinite jump sets. The proof is a short positive-kernel estimate whose prior status also requires checking.
+\newpage
+\section*{3. Inverse endpoint data and combinatorial progress}
+\textbf{Endpoint reconstruction (proved).} For triangular layers over a field, complete labelled rows through $N$ uniquely recover $f$ on $W_N$ if $p_{n-1}(0)$ and $p_{n-1}(n-1)$ are nonzero for $2\le n\le N$. Initially $f(0)=p_1(0)$, $f(1)=p_1(1)$; then
+\begin{align*}
+f(n)&=\frac{p_n(n)-\sum_{z=1}^{n-1}p_{n-1}(z)f(n-z)}{p_{n-1}(0)},\\
+f(1-n)&=\frac{p_n(0)-\sum_{z=0}^{n-2}p_{n-1}(z)f(-z)}{p_{n-1}(n-1)}.
+\end{align*}
+Only two new differences occur at each layer. Weights outside $W_N$ are invisible. For ordinary integer counts, $0,1\in D$ guarantee the pivots and positive reachability everywhere; this guarantee need not hold after reduction to positive characteristic. These formulas use full previous rows, not only two boundary sequences. This is elementary triangular elimination, distinct from fixed undirected graph recovery under walk-matrix rank assumptions [4], but not certified novel.
+
+\textbf{Two limits.} Nonextinction alone does not identify jumps: $D=\{0\}$ and $D=\Z_{\le0}$ produce the same full array. Positivity also does not transfer the structural finite horizon to actual counts. For $q=5$, $D=\{-5,-3,0,1,4,6\}$ gives positive counts at every endpoint and residue-uniform rows through $6$, including
+\[
+p_5=(6,8,10,10,8,6),\quad p_6=(22,22,24,20,24,22,22),
+\]
+yet $f(-4)\ne f(1)$. Uniformity fails at $7$. The infinite-support converse for nonextinct trajectories remains open.
+
+\textbf{Packed words (one original unresolved family settled).} An $m$-packed word uses an initial interval of letters, each with multiplicity divisible by $m$. Its sylvester congruence exchanges adjacent $a,c$ when a later $b$ satisfies $a\le b<c$. Novelli--Thibon [5, (182)] count classes of length $mn$. Their formula at $x=2$ equals
+\[
+\frac{[z^n]F(z)^{mn+1}}{mn+1},\qquad F(z)=\frac{1-z}{1-2z}.
+\]
+With $Z=tF(Z)^m$, Lagrange inversion gives $H=F(Z)=1+tH^m(2H-1)$, precisely the nonnegative path series with $(1,1)$ and vertical $(0,-mk)$ steps to $(mn,0)$. This proves the count identity and indexing. A direct map to congruence classes is not yet available. Blob definitions have not been obtained from the original primary source, so that claim remains unresolved.
+
+The classical tree/Dyck/dissection bijections preserve a full profile: $r_a$ steps $-a$, $u=\sum ar_a$ upsteps and $N=u+\sum r_a$ give $N!/((u+1)!\prod r_a!)$. For a nonempty polygon profile ($a\ge1$), these are $r_a$ faces of size $a+2$, $u+2$ boundary sides and $\sum r_a-1$ diagonals. This is classical degree enumeration, not a new refinement obtained merely by changing notation.
+\newpage
+\section*{4. Questions for discussion, evidence and prior work}
+\textbf{Where James's input could be most valuable.}
+\begin{enumerate}
+\item Are the finite growing-triangle converse and the arbitrary-funnel consequence recognizable lemmas in structured-matrix or equitable-partition theory? Do their exact finite windows add useful content?
+\item Is the actual-trajectory mass obstruction known for killed finite-range kernels? Which infinite-support hypotheses could replace the missing full-predecessor core and yield a periodicity converse?
+\item Can one prove the general-$q$ integer-cone conjecture, characterize rational-slope boundary graphs, or find a counterexample? Which verification horizons are genuinely optimal?
+\item Does a natural graded constrained-walk category equivalence yield useful new fibre bijections or quotient representations? Endpoint monoids alone lose generator information; the full transition graph already determines all counts.
+\item Can the packed-word count equality be realized by a direct, statistic-preserving map, and does it add anything beyond the existing Hopf-algebra/tree constructions?
+\end{enumerate}
+
+\textbf{Publication structure.} A plausible paper would center weighted boundary geometry, structural versus actual residue compression, finite-range obstructions and inverse endpoint data. The classical bijections belong in short context or a separate supporting note. At present there are rigorous results and precise questions, but neither a completed novelty audit nor a confident standalone-publication case. The aim of discussion is to challenge and strengthen the mathematics, not to seek endorsement of an already finished paper.
+
+\textbf{Verification and AI assistance.} OpenAI Codex assisted with derivations, source comparison, exact Python implementations, drafting and separate internal proof/counterexample/generalization reviews. Backend model versions were not exposed. These reviews share model limitations and are not external peer review or human mathematical sign-off. Committed checks include exact inversion on all $256$ binary windows with $0,1$ present, $252$ finite-range certificates, $2{,}955$ rational-weight graph cases, $672$ cones, $70$ widening funnels, independent word enumeration, and direct small sylvester-congruence components. Larger earlier finite checks and all $697$ printed source-table values also pass. Finite checks corroborate proofs; they do not prove unlimited statements. Nicholas Ham remains sole listed author. James has not been contacted or listed as a contributor.
+
+\textbf{Selected primary references and exact reading boundary.}
+\begin{enumerate}
+\item East--Ham, \emph{Lattice paths and submonoids of $\mathbb Z^2$}, \href{https://arxiv.org/abs/1811.05735}{arXiv:1811.05735}. V1 Example3.14 and \S4; v2/v3 Lemma3.2 and Remark3.4. Targeted version comparison; complete v3 read in an earlier pass.
+\item Ham, \emph{Lattice path conjectures} (11 May2019), \href{https://n-ham.com/old-website/pdfs/Lattice\%20Path\%20Conjectures.pdf}{original collection}. All sections inventoried; current proof statuses are recorded separately.
+\item Bailey--Cameron--Gavrilyuk--Goryainov, \href{https://arxiv.org/abs/1802.01001}{arXiv:1802.01001}, \S2. Fixed-graph equitable/invariant-space background, not an exact growing-window priority determination.
+\item Liu--Siemons, \href{https://arxiv.org/abs/1911.00062v3}{arXiv:1911.00062v3}, Theorems1.2,5.1,5.5. Fixed undirected graph data differ from the expanding-kernel problem.
+\item Novelli--Thibon, \href{https://arxiv.org/abs/1403.5962v3}{arXiv:1403.5962v3}, \S\S2.7,5.1,5.3,(182). Relevant definitions and formula read; no whole-paper reading claim or reliance on differently normalized (186).
+\end{enumerate}
+\end{document}

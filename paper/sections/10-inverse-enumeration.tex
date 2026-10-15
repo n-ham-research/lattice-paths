@@ -1,0 +1,23 @@
+\section{Recovering the observable jump weights}
+\begin{theorem}[Labelled endpoint reconstruction]\label{thm:inverse}
+On triangular layers $I_n=\{0,\ldots,n\}$ over a field, complete labelled rows $p_0,\ldots,p_N$ determine the time-independent weights on $W_N=\{1-N,\ldots,N\}$ if
+\[
+p_{n-1}(0)\ne0,\quad p_{n-1}(n-1)\ne0\qquad(2\le n\le N).
+\]
+No weight outside $W_N$ is observable through that horizon. For ordinary integer counts (or their characteristic-zero image), $0,1\in D$ guarantee the pivots.
+\end{theorem}
+\begin{proof}
+Initially $f(0)=p_1(0)$ and $f(1)=p_1(1)$. Given weights on $W_{n-1}$, the two boundary equations give
+\begin{align*}
+f(n)&=\frac{p_n(n)-\sum_{z=1}^{n-1}p_{n-1}(z)f(n-z)}{p_{n-1}(0)},\\
+f(1-n)&=\frac{p_n(0)-\sum_{z=0}^{n-2}p_{n-1}(z)f(-z)}{p_{n-1}(n-1)}.
+\end{align*}
+All summands use known weights, proving induction. No transition through $N$ uses a difference outside $W_N$. All-zero and all-one increment words prove the indicator pivot condition for ordinary nonnegative counts. Over a positive-characteristic field, cancellation may instead make such a pivot zero.
+\end{proof}
+These are full-row data, not just two boundary sequences: the equations use previous interior counts. The argument is a specialized triangular elimination; compare fixed-graph walk-matrix recovery in \cite{LiuSiemons}. Nonextinction alone is insufficient: $D=\{0\}$ and $D=\Z_{\le0}$ produce the same entire array, supported only at height zero.
+
+Nor does positivity transfer the structural finite horizon. For $q=5$, the step set $D=\{-5,-3,0,1,4,6\}$ has positive counts at every endpoint using $0,1$, and rows through $6$ are residue-uniform. Rows $5,6$ are
+\[
+(6,8,10,10,8,6),\qquad(22,22,24,20,24,22,22),
+\]
+but $f(-4)\ne f(1)$. Thus the old finite converse fails for actual counts even with full positive reachability. This is a finite-prefix obstruction; no infinite-support counterexample or converse for $q>1$ is claimed.
