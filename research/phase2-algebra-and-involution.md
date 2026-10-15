@@ -1,0 +1,19 @@
+# Algebraic information and the signed involution: disposition
+
+16 October 2026, coordinator `/root`. These are standard consequences or bounded research directions, not new algebraic results. They are deliberately excluded from manuscript theorem claims.
+
+## Endpoint monoid does not determine enumeration
+
+Let C={(x,y)∈Z²:0≤y≤x}. Both step sets S={(1,0),(1,1)} and S' = S∪{(2,1)} generate the same endpoint monoid C, and all their words stay in C. Yet there are two S-words to (2,1) and three S'-words (the additional one-letter word). Thus even the same additive constraint region and endpoint monoid do not determine fibre cardinalities. Within the special dx=1 setting, the grade-one elements of the embedded endpoint monoid recover the step set; that extra restriction must not be suppressed when using this counterexample.
+
+The constrained-walk category already suggested in East–Ham v3 Remark 3.4 retains objects (positions) and morphisms (words), with concatenation. Enumeration is the number of morphisms between specified objects. The free-category generating graph, including distinct allowed steps and admissible vertices, is sufficient data. For any finite acyclic truncation with adjacency matrix A, the path matrix is I+A+A²+...=(I−A)^{-1}, a finite sum. Indeed (A^k)_{v,u} counts length-k words by induction on concatenation; acyclicity makes A nilpotent. Merely rediscovering this identity is not a research contribution.
+
+A layer partition with indicator inclusion S_n and incoming quotient M_n satisfies A_n S_(n−1)=S_n M_n. Multiplying gives A_n...A_1 S_0=S_n M_n...M_1. This explains exactly which composition information the quotient preserves. It counts endpoints per vertex, not class totals. The new rigidity investigation characterizes when this standard intertwining exists for a particular geometric family, rather than claiming the identity as new. Primary background inspected: Coutinho–Godsil, *Graph Spectra and Continuous Quantum Walks*, preliminary notes 7 March 2021, §3.1 and §4.2; https://www.math.uwaterloo.ca/~cgodsil/quagmire/Fields24/pdfs/GrfSpc3.pdf . No full-book reading is claimed.
+
+Next algebraic question: identify natural equivalences of graded constrained word categories that give explicit fibre bijections, rather than only a shared endpoint monoid or coincident numerical quotient. No such additional classification was proved in this pass.
+
+## Signed involution: correct but elementary
+
+The append/delete involution in reviews/independent-initial-audit.md works for arbitrary nested height sets with all unequal-height transitions. If height k first enters at b≥1, form the signed disjoint union of words of lengths j=b−1,...,n−1, sign (−1)^(n−1−j). Remove a final step if the word ends at k; otherwise append the unique step to k if j<n−1. These operations are inverses, stay inside the nested sets, and change parity. Survivors are exactly length n−1 words ending away from k; appending k gives the desired length-n words ending at k. For k=0 pair a virtual length−1 object with the empty word to handle the initial correction.
+
+This is local signed cancellation of the already established recurrence P_n(k)=T_(n−1)−P_(n−1)(k). The nested-set version is broader than one factorial formula, but the proof adds no classification or new enumerative phenomenon. Exact-model prior work is East–Ham v1 Example 3.14, (3.15)–(3.16), with Rorabaugh's earlier axis proof in OEIS. Targeted searches for append/delete sign-reversing involutions located general literature, but did not establish exact priority for this formulation. It is neither justified to call it novel nor necessary to prove it is word-for-word an existing inclusion–exclusion proof to decide its research priority. Recommendation: retain as an elementary explanatory note and focus effort on rigidity and unresolved direct bijections.

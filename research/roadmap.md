@@ -10,3 +10,7 @@ First-session scope: infrastructure, source inventory, verified factorial founda
 6. Audit Catalan/Fuss–Catalan families using tree/Łukasiewicz bijections and compare conventions carefully.
 7. Explore East–Ham constrained monoids and walk categories while retaining generating sets and fibre counts.
 8. Only then assess whether a coherent result warrants a paper and an invitation to James East. No contact is authorized.
+
+## After phase 2
+
+The current handover is handover-phase2.md. Finite triangular residue rigidity is proved with independent reviews; tree/Dyck/polygon maps are classical and explicit; all697 printed source table entries match. Next prioritize historical priority and stronger geometric consequences of rigidity, direct bijections between the two Fuss models, and the unresolved blob/packed-word identifications. Do not re-prove known factorial or tree facts merely to lengthen the draft.

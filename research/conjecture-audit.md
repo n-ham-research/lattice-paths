@@ -30,3 +30,7 @@ For a horizontal row r, the number of verified reachable terms depends on r; no 
 ## Outstanding verification
 
 All other original sections remain extracted/unresolved; no general claim that their tables have been reproduced. The Catalan DAG test is an engine sanity check, not a complete audit of §§14/17. Original Tables 1–10 were read and inventoried but not independently recomputed in full. Precise source-vs-corrected formulations, OEIS histories and literature priority are distinct tasks. No human author approval of proofs is recorded.
+
+## Phase 2 superseding status ledger
+
+The initial ledger above is retained as the first-pass record. Current cumulative claim-by-claim dispositions are in phase2-claim-status.json and summarized in handover-phase2.md. All ten source tables have now been independently reproduced (697 printed values), and multiple nonfactorial families have proofs/counterexamples. Historical attribution is expanded by East–Ham v1 Example3.14. The original extraction inventory remains unchanged.
