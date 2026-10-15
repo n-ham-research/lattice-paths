@@ -2,7 +2,10 @@
 import argparse
 import json
 from pathlib import Path
-from lattice_paths import model, unit_columns
+if __package__:
+    from .lattice_paths import model, unit_columns
+else:
+    from lattice_paths import model, unit_columns
 
 
 def evidence():

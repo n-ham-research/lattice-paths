@@ -47,6 +47,15 @@ class Paths(unittest.TestCase):
         with self.assertRaises(ValueError):
             dag_counts([(0,0),(1,0)], lambda u,v: True)
 
+    def test_verification_entry_points(self):
+        import subprocess
+        root = Path(__file__).resolve().parents[2]
+        for args in (("-m", "experiments.verify", "--check"),
+                     ("experiments/verify.py", "--check")):
+            result = subprocess.run([sys.executable, *args], cwd=root,
+                                    capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stderr)
+
     def test_duplicate_region_is_rejected(self):
         h = lambda x: [0] if x == 0 else [0,0]
         with self.assertRaises(ValueError):
