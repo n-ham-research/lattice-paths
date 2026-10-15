@@ -31,8 +31,23 @@ If $|I_n|\to\infty$ and the full-predecessor cores $J_n$ eventually contain $q$ 
 Choose any sufficiently late $b$ and then $h$ giving the strict multiplicity gap; apply Theorem~\ref{thm:mass}. For bounded endpoint movements $D_A,D_B$, the size of $J_n$ is at least $|I_{n-1}|-C$, where $C=\max(D_A,M)-\min(-D_B,m)$. Diverging widths give the core condition. Rounded affine boundaries of distinct slopes have diverging widths and bounded endpoint movements, as do their bounded periodic perturbations.
 \end{proof}
 
-For the triangle set $L=\max(0,M)$ and $R=\max(0,1-m)$. If
+\subsection{A shorter triangular certificate}
+\begin{theorem}[Boundary propagation]\label{thm:short}
+In the triangle, let $L=\max(0,M)$, $R=\max(0,1-m)$ and $v=\max(M,1-m)\ge1$. If
 \[
-b\ge\max(q-1,L+R+q-2),\qquad h=q\bigl(\lceil(b+1)/q\rceil+1\bigr)-1,
+b\ge\max(q-1,L+R+q-2),\qquad T=\lceil q/v\rceil,
 \]
-then uniformity of rows $b,\ldots,h$ forces $p_b=0$. Here $h\le b+2q-1$, a sufficient bound, not claimed optimal. Consequently a finite nonempty step set cannot give a nonextinct eventually residue-uniform triangular trajectory. Infinite support and signed weights are not covered by the mass proof.
+then $q$-uniform rows $b,\ldots,b+T$ force $p_b=0$. This holds also for arbitrary prescribed nonnegative data at layer $b$.
+\end{theorem}
+\begin{proof}
+The full cores give the residue convolution in Theorem~\ref{thm:mass}. At any other target, the actual sum omits terms from that full convolution. Nonnegativity and equality of the two values force every omitted term to vanish.
+
+Take an active source residue and a supported step $d>0$. Its least representative $r\in[0,q-1]$ must satisfy $r+d<q$: otherwise the least target of residue $r+d$ has a negative predecessor and a positive omitted term. Full convolution propagates positivity, so repeated use of $d$ increases the representative by $d$ without wrapping. This is impossible after $\lceil q/d\rceil$ transitions. For $d\le0$ use the least distance $\delta$ from the moving top to the active residue. It increases by $1-d$ without wrapping, since a wrap would give a predecessor above the previous top. This is impossible after $\lceil q/(1-d)\rceil$ transitions. Choose $d=M$ or $m$ to attain $v$.
+\end{proof}
+For restarted data the bound is sharp for every $q,v$: take the single jump $d=1-v$, a sufficiently large $b$ divisible by $q$, and initial value one exactly on residue zero. Translation gives precisely $\lceil q/v\rceil$ consecutive nonzero uniform rows before a missing top representative breaks uniformity. This is not an origin-start optimality example. In the natural origin-start class $\operatorname{supp}f\subseteq\{0,1\}$, a sharper fact holds: no row $n\ge q+1$ is $q$-uniform. If both weights $a,b>0$, comparing binomial counts at $0,q$ and $1,q+1$ would require
+$\binom n{q+1}/\binom nq=n$, whereas it equals $(n-q)/(q+1)$. Single-step cases fail already for $n\ge q$; equal weights attain uniformity at $n=q$.
+
+The certificate also excludes proposed inverse models: $t+1$ nonzero uniform rows satisfying their core threshold imply $tv<q$. In particular two such rows rule out every finite-support candidate with $v\ge q$, without recovering its weights. The threshold depends on the proposed support; this is not an unconditional bound on an unknown infinite kernel.
+
+\paragraph{Assumption boundaries.}
+For layer-dependent nonnegative kernels supported in one common finite interval, Theorem~\ref{thm:mass} still holds: replace $K^{h-b}$ by $\prod_{n=b+1}^h K_n$. Zero $K_n$ causes extinction. Thus eventual obstruction does not need time homogeneity. Without a common range bound, $f_n=1_{[1-n,n]}$ produces $p_n(y)=n!$. The same counts arise for the infinite homogeneous kernel $f\equiv1$. Bounded layers $I_n=\{0\}$ with $f(0)=1$ also persist. Signed kernels and sparse nonconsecutive uniform rows remain open extensions here; failure of our proof is not a counterexample. Standard killed-walk operators on fixed sets \cite[Section 12.4.1]{LawlerLimic} provide related background, not a priority determination for this expanding-window certificate.

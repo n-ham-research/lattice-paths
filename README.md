@@ -2,18 +2,18 @@
 
 Mathematical research by **Nicholas Ham** in enumerative combinatorics, lattice paths, generating functions and algebraic combinatorics. Starting sources: [Ham's 2019 conjectures](https://n-ham.com/old-website/pdfs/Lattice%20Path%20Conjectures.pdf) and [East–Ham, arXiv:1811.05735v3](https://arxiv.org/abs/1811.05735v3).
 
-Phase3 focuses on **structural versus actual residue compression**: weighted boundary/funnel rigidity, finite-range trajectory obstructions on general growing windows and labelled endpoint-data reconstruction. The main paper remains seven pages; a separate four-page mathematical briefing states the strongest results and open questions. Historical priority and standalone publication value remain unresolved.
+Phase4 connects **rigidity with inverse enumeration**: shorter finite-range certificates, endpoint recovery on arbitrary widening funnels, and sharp small-modulus actual-uniformity converses. The focused manuscript is nine pages; the refined four-page briefing separates recognition from development questions. Historical priority and publication value remain unresolved; external specialist feedback is the recommended next step.
 
-The cumulative150-claim ledger records **58 established/answered,19 disproved,61 unresolved,10 numerical-table claims verified and2 context entries**. Of150 IDs,131 received full or partial investigation; this is not131 solved claims. This pass newly resolves the packed-word axis family using its primary definition and formula. All697 printed source-table values remain reproduced.
+The cumulative150-claim ledger records **58 established/answered,19 disproved,61 unresolved,10 numerical-table claims verified and2 context entries**. Of150 IDs,131 received full or partial investigation; this is not131 solved claims. Phase3 resolved the packed-word axis family; Phase4 adds structural theorems without changing the original claim dispositions. All697 printed source-table values remain reproduced.
 
 ## Reading order
 
-- [Current handover](research/handover-phase3.md), [phase2 handover](research/handover-phase2.md), [mathematical summary](research/mathematical-summary.md), [first-pass handover](research/handover.md), [roadmap](research/roadmap.md).
+- [Current handover](research/handover-phase4.md), [phase3 handover](research/handover-phase3.md), [phase2 handover](research/handover-phase2.md), [mathematical summary](research/mathematical-summary.md), [first-pass handover](research/handover.md), [roadmap](research/roadmap.md).
 - [Complete conjecture inventory](research/conjecture-inventory.md), [machine-readable extraction](research/conjecture-inventory.json), [subsequent audit](research/conjecture-audit.md), [current claim statuses](research/phase3-claim-status.json).
 - [Foundation proofs](research/foundation.md), [literature and East–Ham analysis](research/literature-review.md), [generalizations](research/generalizations.md).
 - [Internal reviews](reviews/review-log.md), [source provenance](sources/README.md), [original algorithms audit](sources/algorithms-audit.md).
 - Main manuscript `paper/main.tex` → `paper/build/main.pdf`; four-page briefing `briefing/main.tex` → `briefing/build/main.pdf` (ignored build products).
-- [Novelty ledger](research/phase3-novelty-ledger.md), [proposed publication structure](research/publication-structure-phase3.md).
+- [Novelty ledger](research/phase4-novelty-ledger.md), [proposed publication structure](research/publication-structure-phase4.md).
 
 ## Reproduce
 

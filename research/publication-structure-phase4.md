@@ -1,0 +1,11 @@
+# Phase 4 publication structure and recommendation
+
+Working title: *Rigidity and Inverse Problems for Restricted Lattice-Path Enumeration*. Nicholas Ham remains sole author. No submission or external contact.
+
+The manuscript grows from seven to nine pages because it now proves two direct bridges rather than only juxtaposing elementary observations: scalar uniformity identifies kernel shape on arbitrary widening funnels; small-modulus actual uniformity supplies a periodic seed, which endpoint inverse uniqueness propagates. The support-dependent obstruction also yields exclusion certificates for inverse support classes. Full-data fibers make the information content precise, and reflection supplies a robust limitation of compressed data.
+
+Main order: definitions; structural triangular/funnel rigidity; actual finite-range mass and shorter boundary certificates; observation fibers and funnel recovery; compressed scalar/parity/modulus-three inverse results; limits and discussion. Classical factorial/tree/polygon and packed-class counts are preserved in prior research and source sections, but no longer occupy a main paper section. The 150-claim audit remains a separate supporting project. No separate new combinatorial paper is justified by this pass.
+
+This is a coherent mathematical narrative with proofs, not an established publication case. Many ingredients are short and potentially familiar. The sharp real/rational/indicator parity distinction is a useful exact phenomenon, but its originality is unverified. General-q, unequal initial weights and eventual uniformity are open, and the optimal general origin-start block length is not supplied by restarted sharpness.
+
+Recommendation: external specialist recognition is now the better next step. The author can share the four-page briefing, then offer the nine-page draft if requested. Ask first whether the exact statements are familiar, then whether a general periodic-seed theorem or useful observation equivalence merits development. Do not commission another broad internal search or treat James as a verifier of the whole archive. Further internal work should follow a mathematically specific lead from that discussion. The author will decide whether and when to contact him.

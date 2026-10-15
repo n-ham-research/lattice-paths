@@ -1,0 +1,48 @@
+\section{Compressed observations and small-modulus converses}\label{sec:compressed}
+\begin{theorem}\label{thm:parity}
+Let $f:\Z\to\mathbb R_{\ge0}$ be time independent, with $f(0)=f(1)=t>0$. In the triangle, if actual rows through $N\ge6$ are $2$-uniform, then $f=t$ on $W_N$. For nonnegative rational weights the threshold is $5$; for indicators containing $0,1$ it is $3$. Each initial threshold is optimal. All-horizon uniformity therefore forces a globally constant kernel in these classes.
+\end{theorem}
+\begin{proof}
+Normalize $t=1$, which divides row $n$ by $t^n$. Row two forces $f(-1)=f(2)=x\ge0$. Put $C=x^2+2x+3$. The row-three interiors both equal $C$; its boundary comparisons force
+\[
+f(-2)=f(3)=c=\frac{x^2-x+2}{x+1}.
+\]
+Thus row three is scalar. Row-four interiors have even value $A=2(x+1)C$ and odd value $B=(2+x+c)C$. Its boundary comparisons force
+\[
+f(-3)=f(4)=a=\frac{3x-1}{x+1}.
+\]
+At row five an interior comparison, independent of the two new extreme weights, gives
+\[
+0=p_5(1)-p_5(3)=A(a-c)+B(c-x)
+=-\frac{2C(x-1)^2(x^2+2x-1)}{(x+1)^2}.
+\]
+Hence $x=1$ or $\sqrt2-1$. Rationality excludes the latter. For indicators, already $c\in\{0,1\}$ excludes $x=0$, giving the threshold three.
+
+For the exceptional real branch write $s=\sqrt2$. Then $c=3s-3$, $a=3-2s$, and the two row-five extremes must equal $b=6s-7$. Direct recurrence gives row five scalar, of value $T=96-32s>0$. At row six,
+\[
+p_6(2)/T=3s,\qquad p_6(0)/T=8s-7+f(-5).
+\]
+Their equality would give $f(-5)=7-5s<0$, impossible. Thus $x=1$ in all cases. All preceding recovered weights then equal one, and boundary comparisons recover the remaining extremes through the stated horizon.
+
+For propagation, suppose $f=1$ on $W_m$, $m\ge3$. Rows through $m$ equal $n!$ at every endpoint. At row $m+1$ every interior count equals $(m+1)!$ and each boundary has an interior height of its parity. Uniformity fixes both boundary counts, and the nonzero pivot $m!$ forces both new weights to equal one. Induction proves the result.
+
+For sharpness, $D=\{0,1\}$ passes through two. The rational prefix $x=1/2,c=7/6,a=1/3$ passes through four but fails at five, independently of new weights. The real prefix $x=s-1,c=3s-3,a=3-2s,b=6s-7$, all positive, passes through five but admits no nonnegative continuation through six. Set all unlisted weights to zero in each example. These are finite-prefix counterexamples, not infinite uniform trajectories.
+\end{proof}
+This is an inverse theorem from initial equal weights and qualitative uniformity flags, rather than from all labelled values. Its elementary seed calculation and priority require specialist assessment. Unequal initial real weights, general moduli, eventual rather than all-row uniformity and signed coefficients remain outside the statement.
+
+\begin{proposition}[Periodic-seed propagation]\label{prop:seed}
+Over a field, suppose a triangular kernel has nonzero boundary pivots, its actual rows through $N$ are $q$-uniform, and it is $q$-periodic on $W_m$ for some $q\le m\le N$. Then it is $q$-periodic on $W_N$.
+\end{proposition}
+\begin{proof}
+Compare with the globally periodic continuation of the seed, whose transitions preserve residue-constant inputs. If kernels agree through $W_k$, their rows agree through $k$ and all interior endpoints at $k+1$ agree. Each new boundary has an interior endpoint of its residue because $k\ge q$. Uniformity fixes both boundary values, and the nonzero pivots identify the two new weights. Induct on $k$.
+\end{proof}
+
+\begin{proposition}[Modulus three for indicators]\label{prop:three}
+If $0,1\in D$ and actual rows through $N\ge4$ are $3$-uniform, then $1_D$ is $3$-periodic on $W_N$. The horizon four is optimal.
+\end{proposition}
+\begin{proof}
+Put $a=f(-1)$, $b=f(2)$, $A=f(-2)$, $B=f(3)$. Row-three endpoint equality is
+$3(a-b)+(1+b)A-(1+a)B=0$. Binary values force $a=b=x$, $A=B=c$. Row three is $(P,Q,Q,P)$, with $P=1+3x+(1+x)c$ and $Q=3+2x+x^2$. Row-four comparisons give
+$f(-3)=f(4)=c+(Q/P)(1-c)$. If $c=0$, this is $3$ or $3/2$, impossible; thus $c=1$ and both new weights are one. The seed has residue values $(1,1,x)$, so Proposition~\ref{prop:seed} applies. For sharpness $D=\{0,1\}$ passes through three but is not periodic on $W_3$.
+\end{proof}
+Thus the infinite indicator converse with $0,1\in D$ is established for $q=2,3$; a general modulus still needs a periodic seed theorem. For $q=3$ the possibilities are $D=\Z$ and $D=\{d:d\equiv0,1\pmod3\}$.
