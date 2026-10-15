@@ -26,3 +26,9 @@ The complete source-claim inventory lives in `research/conjecture-inventory.md` 
 All697 numeric body entries of Ham's ten source arrays are now tracked as mathematical facts in experiments/source_tables.json. Every numeric token was independently spatially remapped by a second agent; Tables6–8 source page was also visually reviewed. Numeric counts agree; horizontal axis position13 is printed12 in Tables6 and7. The source fixture retains both coordinate positions and literal printed labels, with the source hash. It redistributes no source PDF, prose or external code. See research/phase2-additional-proofs.md and reviews/phase2-tables.md for limits.
 
 Additional primary literature inspection is documented with exact scope in phase2-bijections.md, phase2-classification.md, phase2-polygons.md and phase2-algebra-and-involution.md. Current OEIS pages are selectively checked, not all150 identifiers. No failure to find an exact theorem is treated as evidence of first priority.
+
+## Phase 3 targeted sources
+
+East–Ham v2 was added to the ignored cache for comparison: PDF SHA-256 `b2c5e3a69c6272996e41b5539c9fd5090b43256be31ad757bbcd374a76a04241`, extracted text `f689c5bf8a0867f862c7c97b9ce3f95041172ed1ddd790568ea41e7c41585d22`. Exact location/scope and the nonempty-input algorithm qualification are in research/phase3-east-ham-versions.md. Full-book/full-paper reading is not asserted from targeted inspection.
+
+Primary HTML sections inspected: Novelli–Thibon arXiv:1403.5962v3 §§2.2,2.7,5.1,5.3,(182); Bailey et al arXiv:1802.01001v1 §2 before Proposition2.1; Liu–Siemons arXiv:1911.00062v3 introduction/§5 specific recovery theorems. Links, exact comparisons and incomplete coverage are in research/phase3-novelty-ledger.md. Read1986 blob definitions were not obtained, and no blob proof is claimed. No third-party prose/PDF/code was added to tracked sources.

@@ -14,3 +14,7 @@ First-session scope: infrastructure, source inventory, verified factorial founda
 ## After phase 2
 
 The current handover is handover-phase2.md. Finite triangular residue rigidity is proved with independent reviews; tree/Dyck/polygon maps are classical and explicit; all697 printed source table entries match. Next prioritize historical priority and stronger geometric consequences of rigidity, direct bijections between the two Fuss models, and the unresolved blob/packed-word identifications. Do not re-prove known factorial or tree facts merely to lengthen the draft.
+
+## After phase 3
+
+Current handover: handover-phase3.md. Main focus is structural versus actual residue compression, general growing-window mass obstructions and inverse endpoint data. Review the four-page briefing and exact novelty ledger before deciding on external discussion. Strong next questions are infinite-support trajectory converses, optimal uniform-block certificates, general-q cone boundary connectivity and useful graded-category equivalences. Classical profile formulas and packed-word count identification are supporting results. Blob primary definitions and a direct class map remain open.

@@ -1,0 +1,1754 @@
+{
+  "date": "2026-10-16",
+  "policy": "Cumulative status after phase3; phase2 snapshot retained unchanged. proved means established under explicit extraction/support/index conventions, not novel; disproved concerns the literal specified assertion, with repaired formulas separate. verified-data is finite numerical evidence, not theorem proof. investigated includes partial investigations whose named identification remains unresolved. The original source inventory is immutable.",
+  "summary": {
+    "total": 150,
+    "investigated": 131,
+    "by_status": {
+      "context": 2,
+      "proved": 58,
+      "unresolved": 61,
+      "disproved": 19,
+      "verified-data": 10
+    },
+    "unresolved_investigated": 44,
+    "unresolved_uninvestigated": 17
+  },
+  "claims": [
+    {
+      "id": "H2019-01-01",
+      "section": 1,
+      "investigated": false,
+      "status": "context",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "Source context or research question, excluded from mathematical claim-resolution totals."
+    },
+    {
+      "id": "H2019-01-02",
+      "section": 1,
+      "investigated": false,
+      "status": "context",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "Source context or research question, excluded from mathematical claim-resolution totals."
+    },
+    {
+      "id": "H2019-02-01",
+      "section": 2,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-03-01",
+      "section": 3,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "k-step composition recurrence proved; source A092921 array/parameter indexing not checked."
+    },
+    {
+      "id": "H2019-04-01",
+      "section": 4,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-05-01",
+      "section": 5,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-06-01",
+      "section": 6,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tree_bijections.py"
+      ],
+      "note": "Axis GF and ordered odd-tree interpretation follow explicit classical bijections."
+    },
+    {
+      "id": "H2019-06-02",
+      "section": 6,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md"
+      ],
+      "note": "Deficit two requires precisely two flat steps; count binomial(N,2), N>=2."
+    },
+    {
+      "id": "H2019-06-03",
+      "section": 6,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-additional-proofs.md"
+      ],
+      "note": "Deficit three gives binomial(N,3)+N\u22122 for N>=3; cited alternative identifiers not disambiguated."
+    },
+    {
+      "id": "H2019-06-04",
+      "section": 6,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-06-05",
+      "section": 6,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tree_bijections.py"
+      ],
+      "note": "Axis GF and ordered odd-tree interpretation follow explicit classical bijections."
+    },
+    {
+      "id": "H2019-07-01",
+      "section": 7,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tree_bijections.py"
+      ],
+      "note": "Axis excursions biject explicitly to Dyck paths with ascents 1 mod m, same semilength."
+    },
+    {
+      "id": "H2019-08-01",
+      "section": 8,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tree_bijections.py"
+      ],
+      "note": "Axis excursions biject explicitly to Dyck paths with ascents 1 mod m, same semilength."
+    },
+    {
+      "id": "H2019-09-01",
+      "section": 9,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tree_bijections.py"
+      ],
+      "note": "Axis excursions biject explicitly to Dyck paths with ascents 1 mod m, same semilength."
+    },
+    {
+      "id": "H2019-10-01",
+      "section": 10,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tree_bijections.py"
+      ],
+      "note": "Axis excursions biject explicitly to Dyck paths with ascents 1 mod m, same semilength."
+    },
+    {
+      "id": "H2019-11-01",
+      "section": 11,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tree_bijections.py"
+      ],
+      "note": "Axis excursions biject explicitly to Dyck paths with ascents 1 mod m, same semilength."
+    },
+    {
+      "id": "H2019-12-01",
+      "section": 12,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-13-01",
+      "section": 13,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-13-02",
+      "section": 13,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-14-01",
+      "section": 14,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "As written the odd-up model is unrestricted, with axis count binomial(3n-1,n), not ternary Catalan."
+    },
+    {
+      "id": "H2019-14-02",
+      "section": 14,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Exact unrestricted endpoint formula established; secondary OEIS alternatives not checked."
+    },
+    {
+      "id": "H2019-14-03",
+      "section": 14,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Exact unrestricted endpoint formula established; secondary OEIS alternatives not checked."
+    },
+    {
+      "id": "H2019-14-04",
+      "section": 14,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Exact unrestricted endpoint formula established; secondary OEIS alternatives not checked."
+    },
+    {
+      "id": "H2019-14-05",
+      "section": 14,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Exact unrestricted endpoint formula established; secondary OEIS alternatives not checked."
+    },
+    {
+      "id": "H2019-14-06",
+      "section": 14,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Exact unrestricted endpoint formula established; secondary OEIS alternatives not checked."
+    },
+    {
+      "id": "H2019-14-07",
+      "section": 14,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tables.py"
+      ],
+      "note": "Nonnegative vertical-down-two model at (2n,0) has Fuss-Catalan count binomial(3n,n)/(2n+1)."
+    },
+    {
+      "id": "H2019-15-01",
+      "section": 15,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-16-01",
+      "section": 16,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "research/phase2-additional-proofs.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Exact extraction and universal formula proved; not a novelty claim."
+    },
+    {
+      "id": "H2019-17-01",
+      "section": 17,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tables.py"
+      ],
+      "note": "Both models at horizontal coordinate mn have binomial((m+1)n,n)/(mn+1); total word lengths differ."
+    },
+    {
+      "id": "H2019-17-02",
+      "section": 17,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tables.py"
+      ],
+      "note": "Both models at horizontal coordinate mn have binomial((m+1)n,n)/(mn+1); total word lengths differ."
+    },
+    {
+      "id": "H2019-17-03",
+      "section": 17,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-17-04",
+      "section": 17,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-18-01",
+      "section": 18,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-polygons.md",
+        "experiments/tests/test_polygon_dissections.py"
+      ],
+      "note": "Explicit tree/dual-polygon inverse gives total polygon edges N+1 for axis path length N; empty object formal."
+    },
+    {
+      "id": "H2019-18-02",
+      "section": 18,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-18-03",
+      "section": 18,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-18-04",
+      "section": 18,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-bijections.md"
+      ],
+      "note": "Reflected axis equality follows reversal; additional positive rows not certified."
+    },
+    {
+      "id": "H2019-19-01",
+      "section": 19,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md"
+      ],
+      "note": "Even-outdegree ordered trees have N+1 leaves at horizontal coordinate N."
+    },
+    {
+      "id": "H2019-19-02",
+      "section": 19,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-bijections.md"
+      ],
+      "note": "Reflected axis equality proved; row one claim not certified."
+    },
+    {
+      "id": "H2019-19-03",
+      "section": 19,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md"
+      ],
+      "note": "Positive odd compositions of y yield F_y for y>=1; origin count1 is exceptional."
+    },
+    {
+      "id": "H2019-19-04",
+      "section": 19,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-20-01",
+      "section": 20,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "research/phase2-additional-proofs.md"
+      ],
+      "note": "Axis GF equals the no-ground-flat Motzkin (Riordan) GF; reflected axes equal."
+    },
+    {
+      "id": "H2019-20-02",
+      "section": 20,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "research/phase2-additional-proofs.md"
+      ],
+      "note": "Axis GF equals the no-ground-flat Motzkin (Riordan) GF; reflected axes equal."
+    },
+    {
+      "id": "H2019-20-03",
+      "section": 20,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-20-04",
+      "section": 20,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-21-01",
+      "section": 21,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tables.py"
+      ],
+      "note": "Vertical arbitrary-down axis GF is the little-Schroeder series; direct coefficient/large-Schroeder check."
+    },
+    {
+      "id": "H2019-22-01",
+      "section": 22,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tables.py"
+      ],
+      "note": "Axis series and reflected axis proven, but blob objects and extra positive rows not certified."
+    },
+    {
+      "id": "H2019-22-02",
+      "section": 22,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-bijections.md",
+        "experiments/tests/test_tables.py"
+      ],
+      "note": "Axis series and reflected axis proven, but blob objects and extra positive rows not certified."
+    },
+    {
+      "id": "H2019-22-03",
+      "section": 22,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-22-04",
+      "section": 22,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-23-01",
+      "section": 23,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase3-combinatorics.md",
+        "experiments/tests/test_combinatorial_refinements.py",
+        "reviews/phase3-generalization.md"
+      ],
+      "note": "Axis count at horizontal coordinate mn equals sylvester classes of m-packed words of length mn, by primary Novelli\u2013Thibon formula182 and Lagrange inversion; no direct class bijection claimed."
+    },
+    {
+      "id": "H2019-23-02",
+      "section": 23,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-24-01",
+      "section": 24,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Literal source support/endpoint assertion fails; corrected support/indexed formula is proved."
+    },
+    {
+      "id": "H2019-24-02",
+      "section": 24,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-24-03",
+      "section": 24,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-24-04",
+      "section": 24,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-24-05",
+      "section": 24,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-24-06",
+      "section": 24,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-24-07",
+      "section": 24,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-24-08",
+      "section": 24,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-25-01",
+      "section": 25,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Literal source support/endpoint assertion fails; corrected support/indexed formula is proved."
+    },
+    {
+      "id": "H2019-25-02",
+      "section": 25,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-25-03",
+      "section": 25,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-25-04",
+      "section": 25,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-25-05",
+      "section": 25,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Endpoint recurrence proved, but alternative named OEIS identifications not certified."
+    },
+    {
+      "id": "H2019-25-06",
+      "section": 25,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Endpoint recurrence proved, but alternative named OEIS identifications not certified."
+    },
+    {
+      "id": "H2019-26-01",
+      "section": 26,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-26-02",
+      "section": 26,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-26-03",
+      "section": 26,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Endpoint recurrence proved, but alternative named OEIS identifications not certified."
+    },
+    {
+      "id": "H2019-26-04",
+      "section": 26,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Endpoint recurrence proved, but alternative named OEIS identifications not certified."
+    },
+    {
+      "id": "H2019-27-01",
+      "section": 27,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-27-02",
+      "section": 27,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-27-03",
+      "section": 27,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Literal source support/endpoint assertion fails; corrected support/indexed formula is proved."
+    },
+    {
+      "id": "H2019-27-04",
+      "section": 27,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-27-05",
+      "section": 27,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/conjecture-audit.md"
+      ],
+      "note": "Literal source support/endpoint assertion fails; corrected support/indexed formula is proved."
+    },
+    {
+      "id": "H2019-27-06",
+      "section": 27,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/conjecture-audit.md",
+        "research/foundation.md",
+        "experiments/results.json"
+      ],
+      "note": "Supported/indexed version proved; see exact scope and qualifications in initial conjecture audit."
+    },
+    {
+      "id": "H2019-28-01",
+      "section": 28,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Literal unrestricted fixed-row assertion includes unreachable residues; supported-row formula proved."
+    },
+    {
+      "id": "H2019-28-02",
+      "section": 28,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Correctly indexed total product; cited q=6 named array not fetched but direct product identity established."
+    },
+    {
+      "id": "H2019-29-01",
+      "section": 29,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Literal unrestricted fixed-row assertion includes unreachable residues; supported-row formula proved."
+    },
+    {
+      "id": "H2019-29-02",
+      "section": 29,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Correctly indexed total product; cited q=6 named array not fetched but direct product identity established."
+    },
+    {
+      "id": "H2019-30-01",
+      "section": 30,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Literal unrestricted fixed-row assertion includes unreachable residues; supported-row formula proved."
+    },
+    {
+      "id": "H2019-30-02",
+      "section": 30,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Correctly indexed total product; cited q=6 named array not fetched but direct product identity established."
+    },
+    {
+      "id": "H2019-31-01",
+      "section": 31,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Literal unrestricted fixed-row assertion includes unreachable residues; supported-row formula proved."
+    },
+    {
+      "id": "H2019-31-02",
+      "section": 31,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Correctly indexed total product; cited q=6 named array not fetched but direct product identity established."
+    },
+    {
+      "id": "H2019-32-01",
+      "section": 32,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Literal unrestricted fixed-row assertion includes unreachable residues; supported-row formula proved."
+    },
+    {
+      "id": "H2019-32-02",
+      "section": 32,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Correctly indexed total product; cited q=6 named array not fetched but direct product identity established."
+    },
+    {
+      "id": "H2019-33-01",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-02",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-33-03",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-04",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-33-05",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-06",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-33-07",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-08",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-33-09",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-10",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-33-11",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-12",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-33-13",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-14",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-33-15",
+      "section": 33,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Stars-and-bars gives nonnegative-increment fixed rows/columns with explicit shifts."
+    },
+    {
+      "id": "H2019-33-16",
+      "section": 33,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Positive-increment fixed columns eventually vanish, so paired infinite simplex-sequence assertion fails."
+    },
+    {
+      "id": "H2019-34-01",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-34-02",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-34-03",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-34-04",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-34-05",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-34-06",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-34-07",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-34-08",
+      "section": 34,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-35-01",
+      "section": 35,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Symmetric infinite-model quadratic is 2(x-1)^2+1, x>=1."
+    },
+    {
+      "id": "H2019-35-02",
+      "section": 35,
+      "investigated": true,
+      "status": "disproved",
+      "corrected_formula_proved": true,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Finite asymmetric set lower diagonal at (3,-1) gives17, not quadratic9."
+    },
+    {
+      "id": "H2019-35-03",
+      "section": 35,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Shifted cubic matched only through x9; no universal proof claimed."
+    },
+    {
+      "id": "H2019-36-01",
+      "section": 36,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-36-02",
+      "section": 36,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-36-03",
+      "section": 36,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-37-01",
+      "section": 37,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-37-02",
+      "section": 37,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-37-03",
+      "section": 37,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-37-04",
+      "section": 37,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-38-01",
+      "section": 38,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "Axis GF is (1-t)/sqrt(1-6t+t\u00b2), the central Delannoy first-difference series."
+    },
+    {
+      "id": "H2019-38-02",
+      "section": 38,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-38-03",
+      "section": 38,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-01",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-02",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-03",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-04",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-05",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-06",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-07",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-08",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-09",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-10",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-11",
+      "section": 39,
+      "investigated": true,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md",
+        "experiments/tests/test_remaining_families.py"
+      ],
+      "note": "General coefficient formula determines the model, but this exact named sequence/array identification remains unproved."
+    },
+    {
+      "id": "H2019-39-12",
+      "section": 39,
+      "investigated": true,
+      "status": "proved",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-remaining-audit.md"
+      ],
+      "note": "Previously unidentified antidiagonal totals have GF (1-t)/(1-3t):1,2,6,18,... ."
+    },
+    {
+      "id": "H2019-40-01",
+      "section": 40,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-40-02",
+      "section": 40,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-40-03",
+      "section": 40,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-40-04",
+      "section": 40,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-40-05",
+      "section": 40,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-40-06",
+      "section": 40,
+      "investigated": false,
+      "status": "unresolved",
+      "corrected_formula_proved": false,
+      "evidence": [],
+      "note": "No completed claim-specific independent investigation in this pass."
+    },
+    {
+      "id": "H2019-41-01",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-02",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-03",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-04",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-05",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-06",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-07",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-08",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-09",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    },
+    {
+      "id": "H2019-41-10",
+      "section": 41,
+      "investigated": true,
+      "status": "verified-data",
+      "corrected_formula_proved": false,
+      "evidence": [
+        "research/phase2-additional-proofs.md",
+        "experiments/source_tables.json",
+        "reviews/phase2-tables.md"
+      ],
+      "note": "Every printed numeric body entry agrees with exact DP; table6/7 duplicate axis label12 at position13 separately corrected."
+    }
+  ],
+  "phase": 3
+}

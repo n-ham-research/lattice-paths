@@ -7,4 +7,6 @@ python3 -m unittest discover -s experiments/tests
 python3 -m experiments.verify --check
 python3 -m experiments.table_audit
 python3 -m experiments.phase2_classification
+python3 -m experiments.trajectory_inverse
+python3 -m experiments.phase3_geometry
 ./scripts/build.sh

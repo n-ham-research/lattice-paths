@@ -34,3 +34,7 @@ All other original sections remain extracted/unresolved; no general claim that t
 ## Phase 2 superseding status ledger
 
 The initial ledger above is retained as the first-pass record. Current cumulative claim-by-claim dispositions are in phase2-claim-status.json and summarized in handover-phase2.md. All ten source tables have now been independently reproduced (697 printed values), and multiple nonfactorial families have proofs/counterexamples. Historical attribution is expanded by East–Ham v1 Example3.14. The original extraction inventory remains unchanged.
+
+## Phase 3 superseding status
+
+Current phase3-claim-status.json establishes only H2019-23-01 anew, by actual primary m-packed-word definitions/formula182 and a formal generating-series proof. Cumulative58 established/answered,19 literal disproofs,61 unresolved,10 verified table claims,2 context;131 fully/partially investigated. New structural/trajectory theorems are separate research statements, not extra original claim IDs. Phase2 snapshot is retained. See handover-phase3.md for domain, novelty and review limits.
