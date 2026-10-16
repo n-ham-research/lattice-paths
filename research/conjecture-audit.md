@@ -42,3 +42,7 @@ Current phase3-claim-status.json establishes only H2019-23-01 anew, by actual pr
 ## Phase 4 disposition check
 
 The original150 claims retain exactly their Phase3 dispositions in phase3-claim-status.json:58 established/answered,19 disproved,61 unresolved,10 verified-data,2 context;131 investigated. New obstruction, funnel inverse and small-modulus compressed theorems are separate structural research, not extra solved original IDs. No inventory or prior snapshot was rewritten. See handover-phase4.md.
+
+## Phase 5 preservation
+
+All original dispositions remain in phase3-claim-status.json without change:58 established/answered,19 disproved,61 unresolved,10 numerical,2 context;131 fully/partly investigated. This pass audits and prepares existing structural results for discussion. The general-q compactness reformulation is not a new original claim resolution. The broader combinatorial programme remains separate.

@@ -1,8 +1,10 @@
 \section{Weighted interval walks}
-Let $I_n=[A_n,B_n]\cap\Z$ be finite intervals, with $I_0=\{0\}$ for origin counts, and let $w:\Z\to R$ be time-independent jump weights. A word uses steps $(1,d)$, stays in the prescribed interval at every vertex, and has weight the product of its jump weights. The empty word has weight one. Indicator weights recover ordinary step sets without multiplicities. Every finite-horizon sum is finite even for infinite support. Segment restrictions are not imposed for arbitrary moving intervals; in a convex cone vertex and segment containment agree.
+Let $I_n=[A_n,B_n]\cap\Z$ be finite intervals, with $I_0=\{0\}$ for origin counts, and let $f:\Z\to R$ be time-independent jump weights. A word uses steps $(1,d)$, stays in the prescribed interval at every vertex, and has weight the product of its jump weights. The empty word has weight one. Indicator weights recover ordinary step sets without multiplicities. Every finite-horizon sum is finite even for infinite support. Segment restrictions are not imposed for arbitrary moving intervals; in a convex cone vertex and segment containment agree.
 
 The labelled endpoint rows satisfy
 \[
-p_0(0)=1,\qquad p_n(y)=\sum_{z\in I_{n-1}}w(y-z)p_{n-1}(z).
+p_0(0)=1,\qquad p_n(y)=\sum_{z\in I_{n-1}}f(y-z)p_{n-1}(z).
 \]
 A row is \emph{$q$-residue-uniform} if its values agree on each residue cell modulo $q$. Structural preservation tests \emph{every} such input, whereas trajectory uniformity tests only the rows generated from the origin. Nonextinction means every row is nonzero. For nonnegative weights a zero row forces all later rows zero. Ring coefficients suffice for structural results; mass comparisons require nonnegative real weights, and reconstruction uses a field.
+
+For fixed layers, the full labelled observation is $\mathcal O_N(f)=(p_0,\ldots,p_N)$. Row totals $\sum_y p_n(y)$ and row multisets forget different information; residue-uniformity records only equalities between selected coordinates. The geometric difference set $U_N=\bigcup_{n=1}^N(I_n-I_{n-1})$ contains every kernel argument observable through $N$. Identifiability will always specify the coefficient class and which observation is available.

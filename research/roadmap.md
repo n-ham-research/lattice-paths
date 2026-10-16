@@ -22,3 +22,7 @@ Current handover: handover-phase3.md. Main focus is structural versus actual res
 ## After Phase 4
 
 Prefer author-led specialist recognition using the refined four-page briefing before further broad internal research. Specific development targets: periodic seeds for q≥4 indicators; unequal real initial weights; eventual uniformity; optimal origin-start certificates; signed kernels and sparse uniform rows; useful geometry/observation equivalences. New q2/q3 and funnel compressed results are in handover-phase4.md. Classical direct maps/blob definitions remain deferred, not solved. No external contact has occurred.
+
+## Phase 5 decision point
+
+A focused proof audit, four-page briefing, nine-page manuscript, local email draft and small verification package are ready for author-led specialist discussion after final validation. No contact was made. Generalq remains open; finite branching only gives a qualitative seed-horizon equivalence, not a new converse or algorithm. Pause broad internal extension campaigns until a useful specialist lead emerges. Original conjecture dispositions and unresolved families remain preserved.

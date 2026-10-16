@@ -6,7 +6,7 @@ For prescribed complete rows define $U=\bigcup_{n=1}^N(I_n-I_{n-1})$ and
 The compatible field-valued kernels on $U$ are exactly $f+\ker A(p)$: necessity is the recurrence and sufficiency follows by induction on the prescribed rows. Thus a coordinate is identifiable exactly when its unit vector lies in the row space. Periodicity is determined precisely when a periodic compatible kernel exists and $\ker A(p)$ annihilates all within-residue differences. These are linear-algebra criteria, not new general inverse theory. Nonnegative or indicator fibers require intersection with the admissible set. Truly hidden intermediate rows instead give polynomial fibers; for example observing only $p_2(0)$ constrains $f(0)^2+f(1)f(-1)$.
 
 \begin{theorem}[Labelled endpoint reconstruction]\label{thm:inverse}
-On triangular layers $I_n=\{0,\ldots,n\}$ over a field, complete labelled rows $p_0,\ldots,p_N$ determine the time-independent weights on $W_N=\{1-N,\ldots,N\}$ if
+For $N\ge1$, on triangular layers $I_n=\{0,\ldots,n\}$ over a field, complete labelled rows $p_0,\ldots,p_N$ determine the time-independent weights on $W_N=\{1-N,\ldots,N\}$ if
 \[
 p_{n-1}(0)\ne0,\quad p_{n-1}(n-1)\ne0\qquad(2\le n\le N).
 \]
@@ -29,7 +29,7 @@ Nor does positivity transfer the structural finite horizon. For $q=5$, the step 
 but $f(-4)\ne f(1)$. Thus the old finite converse fails for actual counts even with full positive reachability. This is a finite-prefix obstruction; this example does not decide an all-horizon converse. Section~\ref{sec:compressed} proves specified small-modulus cases.
 
 \begin{theorem}[Reconstruction on widening funnels]\label{thm:funnelinverse}
-For $I_n=[cn,cn+s_n]$, $0=s_0\le\cdots\le s_N$, complete labelled rows determine $f$ on $[c-s_{N-1},c+s_N]$ if both preceding boundary counts are nonzero at every transition after the first. The coefficient domain is any field; the pivot condition is sufficient.
+For $N\ge1$, $c\in\Z$, $I_n=[cn,cn+s_n]$ and $0=s_0\le\cdots\le s_N$, complete labelled rows determine $f$ on $[c-s_{N-1},c+s_N]$ if both preceding boundary counts are nonzero at every transition after the first. The coefficient domain is any field; the pivot condition is sufficient.
 \end{theorem}
 \begin{proof}
 Shear to $c=0$. Row one recovers $f$ on $[0,s_1]$. At transition $n$ put $a=s_{n-2}$, $b=s_{n-1}$, $k=s_n$. The known window is $[-a,b]$. Use targets $y=b-a-1,\ldots,0$ in descending order to solve
@@ -40,7 +40,7 @@ All other arguments are known; this recovers $[-b,-a-1]$. Next use $y=b+1,\ldots
 \end{proof}
 
 \begin{proposition}[Scalar observations identify kernel shape]\label{prop:scalarinverse}
-For a nonnegative real kernel on such a funnel, every actual row through $N$ is constant and nonzero if and only if $f=\alpha>0$ on $[c-s_{N-1},c+s_N]$. Then
+For $N\ge1$ and a nonnegative real kernel on such a funnel, every actual row through $N$ is constant and nonzero if and only if $f=\alpha>0$ on $[c-s_{N-1},c+s_N]$. Then
 \[
 p_n(y)=\alpha^n\prod_{j=0}^{n-1}(s_j+1).
 \]

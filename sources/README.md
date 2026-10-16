@@ -36,3 +36,7 @@ Primary HTML sections inspected: Novelli–Thibon arXiv:1403.5962v3 §§2.2,2.7,
 ## Phase 4 targeted primary reading
 
 The exact scope and versioned links are recorded in research/phase4-novelty-ledger.md: Blåsten–Isozaki–Lassas–Lu arXiv2107.00494v2 introduction/Condition1.4/Theorems1.5–1.8 (PDFpp1–9), de la Peña–Gzyl–McDonald arXivmath/0610821v1 introduction/Theorem1.1 (PDFpp1–3), and Lawler–Limic author-hosted text §§5.2,12.4.1 selected pages (obstruction agent). Statements and observation definitions were inspected, not whole inverse papers or all their proofs. Earlier comparisons remain historical records; no exact priority determination is claimed. HTML retrieval failed for the new inverse papers, but primary PDFs were accessible. No external PDFs or code were added to Git.
+
+## Phase 5 theorem and bibliography check
+
+research/phase5-novelty-ledger.md records newly re-inspected primary definitions/theorem statements, exact version/access scope and active citation metadata. Standard equitable invariance, affine fibers/elimination and graph relabelling are distinguished from unresolved-priority geometric statements. Lawler–Limic's fixed-set proposition is not silently applied to changing layers; prior augmented-tree recovery already uses one starting root. No third-party PDF or code is included in the discussion archive; it contains links.
