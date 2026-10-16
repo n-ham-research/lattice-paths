@@ -5,3 +5,5 @@ paper/build/
 *.synctex.gz
 
 briefing/build/
+
+external-review/build/

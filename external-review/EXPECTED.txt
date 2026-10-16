@@ -1,0 +1,10 @@
+Expected verification domains (Python standard library, exact arithmetic)
+
+Package integrity: every listed SHA256SUMS file matches.
+Obstruction: 2040 binary origin cases (all255 nonempty supports in[-3,4],q1..8),144 sharp homogeneous restarted cases(q,v1..12),12 varying-kernel restarted cases(q1..12),420 binomial exclusions(q1..12,five weight pairs,n=q+1..q+7).
+Inverse:70 nondecreasing four-layer width tails0..4 with initialwidth0;70 constant-kernel formulas;256 binary reflection assignments onW4;one quadratic partial-observation example.
+Small moduli:16 binary parity assignments onW3 with0,1 fixed;64 binary modulus3 assignments onW4 with0,1 fixed;650 rational parameter instances (not distinct rationals);explicit weighted words through5;exact Q(sqrt2) branch.
+Unit tests:2 methods, independently enumerating weighted words on widths(0,0,2,2,4) and checking rejection of invalid/missing-pivot/inconsistent data.
+Final message:All focused checks passed.
+
+The exact terminal wording and timing can vary. The script exits nonzero on any failure. This is a focused evidence subset;29 unit tests and the historical697 printed source values belong to the full repository validation, not this small package.

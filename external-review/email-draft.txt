@@ -1,0 +1,12 @@
+Subject: Lattice-path counting, rigidity and inverse questions
+
+Hi James,
+
+I've been revisiting my old lattice-path conjectures and some questions arising from our work on lattice paths and submonoids of Z^2. This has led to a few results about what regularities in endpoint counts imply about the permitted jumps: a finite-range obstruction to persistent residue-uniform counts, small-modulus converses, and reconstruction from labelled endpoint data.
+
+I've attached a four-page briefing. I'd be interested to hear whether these statements look familiar, and whether you see a worthwhile direction for developing them. I'd welcome criticism and suggestions, and would be very happy to collaborate again if any of the questions catch your interest.
+
+The work is exploratory, and I haven't established its originality. I used AI assistance for derivations, source comparisons, computation and drafting; that process and its limitations are disclosed in the briefing. A short manuscript and a small reproducible verification package are also available if useful.
+
+Best,
+Nick
